@@ -1,0 +1,96 @@
+header {
+	width: 100%;
+	background: #fff;
+	.inner {
+		width: 1180px;
+		height: 70px;
+		margin: 0 auto;
+		position: relative;
+
+		h1 {
+			position: absolute;
+			bottom: 23px;
+			left: 40px;
+			a {
+				font: bold 25px/1 'arial';
+				color: #555;
+				float: right;
+			}
+		}
+		#nav {
+			position: absolute;
+			bottom: 10%;
+			right: 27%;
+			li {
+				float: left;
+				a {
+					display: inline-block;
+					padding: 20px 30px;
+					font: 14px/1 'arial';
+					color: #555;
+				}
+			}
+		}
+		#util {
+			position: absolute;
+			bottom: 10%;
+			right: 2%;
+			li {
+				float: left;
+				a {
+					display: inline-block;
+					padding: 20px 15px;
+					font: 15px/1 'arial';
+					color: #555;
+				}
+			}
+		}
+
+		.fa-bars {
+			font-size: 24px;
+			color: #fff;
+			position: absolute;
+			top: 30;
+			right: 30px;
+			display: none;
+		}
+	}
+	&.main {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		.inner {
+			h1 a {
+				color: #555;
+			}
+			#nav li a {
+				color: #555;
+			}
+			.fa-bars {
+				color: #555;
+			}
+			#util li a {
+				color: #555;
+			}
+		}
+	}
+	&.sub {
+		background: rgb(152, 207, 145);
+		border-bottom: 1px solid rgb(255, 255, 255);
+		.inner {
+			h1 a {
+				color: #fff;
+			}
+			#nav li a {
+				color: #fff;
+			}
+			.fa-bars {
+				color: #fff;
+			}
+			#util li a {
+				color: #fff;
+			}
+		}
+	}
+}

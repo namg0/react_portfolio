@@ -1,3 +1,6 @@
+$tablet: 1179px;
+$mobile: 359px;
+
 //common
 @import 'common/reset';
 @import 'common/header';
@@ -15,3 +18,5 @@
 @import 'sub/youtube';
 @import 'sub/community';
 @import 'sub/location';
+@import 'sub/login';
+@import 'sub/join';
