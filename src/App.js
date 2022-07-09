@@ -15,9 +15,14 @@ import './components/sub/Youtube';
 import './components/sub/Community';
 import './components/sub/Location';
 import './components/sub/Members';
+import Header from './components/common/Header';
 
 function App() {
-	return <h1>Hello</h1>;
+	return (
+		<>
+			<Header />
+		</>
+	);
 }
 
 export default App;
