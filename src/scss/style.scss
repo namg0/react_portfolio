@@ -3,20 +3,20 @@ $mobile: 359px;
 
 //common
 @import 'common/reset';
-@import 'common/header';
 @import 'common/footer';
+@import 'common/header';
 @import 'common/layout';
 
 //main
-@import 'main/visual';
 @import 'main/content';
+@import 'main/visual';
 
 //sub
-@import 'sub/department';
-@import 'sub/members';
-@import 'sub/gallery';
-@import 'sub/youtube';
 @import 'sub/community';
+@import 'sub/department';
+@import 'sub/gallery';
+@import 'sub/join';
 @import 'sub/location';
 @import 'sub/login';
-@import 'sub/join';
+@import 'sub/members';
+@import 'sub/youtube';
