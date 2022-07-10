@@ -11,16 +11,17 @@ function Department() {
 					<h1>About Us</h1>
 					<div className='aboutTxt'>
 						<h2>
-							MORE <br></br> ABOUT <br></br> US
+							More About Us <br /> Our Services <br /> Our Story
 						</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
 							quaerat possimus optio consequuntur iure magnam exercitationem
-							ipsa quod cum at! <br></br> Lorem ipsum dolor sit amet,
-							consectetur adipisicing elit. Quas asperiores nisi provident
-							corporis laborum nihil similique in assumenda eos magnam. Incidunt
-							consectetur beatae earum! Neque placeat pariatur vero animi?
-							Repellat, placeat! Et.
+							ipsa quod cum at! <br />
+							<br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Quas asperiores nisi provident corporis laborum nihil similique in
+							assumenda eos magnam.{' '}
+							<span>Incidunt consectetur beatae earum!</span> Neque placeat
+							pariatur vero animi? Repellat, placeat! Et.
 						</p>
 					</div>
 					<div className='aboutImg'>
@@ -64,9 +65,9 @@ function Department() {
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Aspernatur, ad laudantium doloribus quae quidem error recusandae
-							dolorum. <br></br> Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Dolor dolore magnam ex eveniet. Numquam minima
-							mollitia temporibus, fugit nostrum at.
+							dolorum. <br /> Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolor dolore magnam ex eveniet. Numquam minima mollitia
+							temporibus, fugit nostrum at.
 						</p>
 					</div>
 				</div>
