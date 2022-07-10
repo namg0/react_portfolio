@@ -1,5 +1,10 @@
+import Layout from '../common/Layout';
 function Location() {
-	return <div>Location</div>;
+	return (
+		<Layout name={'Location'}>
+			<p>Location Contnets</p>
+		</Layout>
+	);
 }
 
 export default Location;

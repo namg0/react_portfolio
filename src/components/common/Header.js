@@ -11,7 +11,7 @@ function Header(props) {
 		<header className={props.type}>
 			<div className='inner'>
 				<h1>
-					<Link exact to='/'>
+					<Link exact to='/' activeStyle={active}>
 						HOBBYBOX
 					</Link>
 				</h1>
