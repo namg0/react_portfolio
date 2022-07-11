@@ -49,15 +49,24 @@ function Department() {
 					<div className='teamImg'>
 						<article className='team1'>
 							<img src={`${path}/img/mem1.jpg`} alt='' />
-							<p></p>
+							<p>
+								<span>Olivia</span> <br />
+								CEO{' '}
+							</p>
 						</article>
 						<article className='team2'>
 							<img src={`${path}/img/mem2.jpg`} alt='' />
-							<p></p>
+							<p>
+								<span>Abigail</span> <br />
+								ENGINEER
+							</p>
 						</article>
 						<article className='team3'>
 							<img src={`${path}/img/mem3.jpg`} alt='' />
-							<p></p>
+							<p>
+								<span>Daniel</span> <br />
+								DESIGNER
+							</p>
 						</article>
 					</div>
 					<div className='teamTxt'>
@@ -65,9 +74,9 @@ function Department() {
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Aspernatur, ad laudantium doloribus quae quidem error recusandae
-							dolorum. <br /> Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Dolor dolore magnam ex eveniet. Numquam minima mollitia
-							temporibus, fugit nostrum at.
+							dolorum. <br /> <br /> Dolor dolore magnam ex eveniet. Numquam
+							minima mollitia temporibus, fugit nostrum at. Placeat veniam
+							dolore, ipsam hic mollitia assumenda unde illo.
 						</p>
 					</div>
 				</div>
