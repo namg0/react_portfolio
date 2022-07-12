@@ -11,15 +11,13 @@ function Header(props) {
 		<header className={props.type}>
 			<div className='inner'>
 				<h1>
-					<Link exact to='/' activeStyle={active}>
-						HOBBYBOX
-					</Link>
+					<Link to='/'>HOBBYBOX</Link>
 				</h1>
 
 				<ul id='nav'>
 					<li>
 						<NavLink to='/department' activeStyle={active}>
-							About Us
+							Department
 						</NavLink>
 					</li>
 					<li>
@@ -29,7 +27,7 @@ function Header(props) {
 					</li>
 					<li>
 						<NavLink to='/youtube' activeStyle={active}>
-							Class
+							Youtube
 						</NavLink>
 					</li>
 					<li>
@@ -39,11 +37,11 @@ function Header(props) {
 					</li>
 					<li>
 						<NavLink to='/location' activeStyle={active}>
-							Contact Us
+							Location
 						</NavLink>
 					</li>
 				</ul>
-				<FontAwesomeIcon icon={faBars} activeStyle={active} />
+				<FontAwesomeIcon icon={faBars} />
 
 				<ul id='util'>
 					<li>

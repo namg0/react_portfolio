@@ -4,7 +4,7 @@ footer {
 	border-top: 4px solid rgb(152, 207, 145);
 	background: rgb(152, 207, 145);
 	padding: 10px 0px;
-	margin-top: 150px;
+	margin-top: 10px;
 
 	.inner {
 		width: 1180px;
@@ -15,8 +15,9 @@ footer {
 		left: 0px;
 
 		h1 {
-			font: bold 25px/1 'arial';
-			color: #333;
+			font: 25px/1 'Fredoka One';
+			letter-spacing: 1px;
+			color: rgb(255, 255, 255);
 			position: absolute;
 			top: 3%;
 			left: 40px;
@@ -27,7 +28,7 @@ footer {
 			top: 20%;
 			left: 46px;
 			font-size: 23px;
-			color: #333;
+			color: rgb(255, 255, 255);
 
 			.fa-facebook-f {
 				padding: 10px 10px;
@@ -48,8 +49,8 @@ footer {
 			display: flex;
 
 			a {
-				color: #333;
-				font: 13px/1 'arial';
+				color: rgb(255, 255, 255);
+				font: 13px/1 'Quicksand';
 				display: inline-block;
 				padding: 10px 20px;
 			}
@@ -65,8 +66,8 @@ footer {
 				position: absolute;
 				right: 5%;
 				width: 270px;
-				font: bold 20px/1 'arial';
-				color: #333;
+				font: bold 22px/1 'Quicksand';
+				color: rgb(255, 255, 255);
 			}
 			input {
 				position: absolute;
@@ -75,18 +76,25 @@ footer {
 				margin-top: 10px;
 				width: 236px;
 				height: 35px;
+				border: 1px solid #fff;
+				padding: 10px;
+				color: rgb(152, 207, 145);
 			}
 			li {
 				position: absolute;
-				right: 4%;
-				top: 25%;
+				display: block;
+				right: 3.9%;
+				top: 46.3px;
 				width: 48px;
-				height: 36px;
-				border: 1px solid #333;
-				border-radius: 10%;
+				height: 35px;
+				background: rgb(255, 172, 225);
 				text-align: center;
 				padding: 3px;
-				color: #333;
+				font: 17px/1.5 'Quicksand';
+				color: #fff;
+				&:hover {
+					font-weight: bold;
+				}
 			}
 		}
 
@@ -96,7 +104,7 @@ footer {
 			left: 40%;
 
 			font: 10px/1 'arial';
-			color: #555;
+			color: #eee;
 			letter-spacing: 2px;
 		}
 	}
@@ -107,6 +115,6 @@ footer {
 		bottom: 9%;
 		width: 100%;
 		height: 1px;
-		background: #777;
+		background: #eee;
 	}
 }

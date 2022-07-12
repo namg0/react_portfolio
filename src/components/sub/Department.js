@@ -50,8 +50,9 @@ function Department() {
 						<article className='team1'>
 							<img src={`${path}/img/mem1.jpg`} alt='' />
 							<p>
-								<span>Olivia</span> <br />
-								CEO{' '}
+								<span>Olivia</span>
+								<br />
+								CEO
 							</p>
 						</article>
 						<article className='team2'>
@@ -76,7 +77,9 @@ function Department() {
 							Aspernatur, ad laudantium doloribus quae quidem error recusandae
 							dolorum. <br /> <br /> Dolor dolore magnam ex eveniet. Numquam
 							minima mollitia temporibus, fugit nostrum at. Placeat veniam
-							dolore, ipsam hic mollitia assumenda unde illo.
+							dolore, ipsam hic mollitia assumenda unde illo. Facilis voluptas
+							harum sint eligendi quaerat voluptatem quo totam modi tempora
+							corrupti.
 						</p>
 					</div>
 				</div>

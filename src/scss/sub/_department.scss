@@ -1,4 +1,5 @@
 .Department {
+	overflow: hidden;
 	.about {
 		width: 100%;
 		margin-bottom: 150px;
@@ -10,13 +11,14 @@
 			}
 			width: 1180px;
 			margin: 0 auto;
+			position: relative;
 
 			h1 {
 				position: absolute;
-				left: 37%;
+				left: 34%;
 				width: 100%;
-				font: bold 45px/1 'arial';
-				color: #333;
+				font: bold 50px/1 'Quicksand';
+				color: rgb(114, 169, 107);
 			}
 			.aboutTxt {
 				position: relative;
@@ -27,7 +29,7 @@
 					position: absolute;
 					top: 80px;
 					left: 5%;
-					font: bold 25px/1.4 'arial';
+					font: bold 25px/1.4 'Quicksand';
 					color: #333;
 				}
 				p {
@@ -35,9 +37,11 @@
 					width: 60%;
 					left: 34%;
 					top: 80px;
-					font: 20px/1.3 'arial';
+					font: 20px/1.2 'Josefin Sans';
+					letter-spacing: 1px;
 					color: #333;
 					span {
+						font-weight: bold;
 						color: rgb(114, 169, 107);
 					}
 				}
@@ -69,13 +73,14 @@
 				.fa-quote-left {
 					font-size: 40px;
 					color: #333;
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 				}
 				p {
 					position: absolute;
 					width: 37%;
 					left: 4%;
-					font: bold 35px/1.3 'arial';
+					font: 38px/1.3 'Oleo Script';
+					letter-spacing: 2px;
 					color: #333;
 				}
 				.fa-quote-right {
@@ -107,10 +112,11 @@
 		width: 100%;
 		> .inner {
 			width: 1180px;
+			height: 1100px;
 			margin: 0 auto;
 			position: relative;
 			.teamImg {
-				width: 60%;
+				width: 65%;
 				height: 800px;
 				overflow: hidden;
 				position: relative;
@@ -123,35 +129,38 @@
 					margin-bottom: 20px;
 					border-radius: 10px;
 					filter: saturate(30%);
-					&:hover {
-						filter: saturate(100%);
-					}
 				}
 
 				.team1 {
 					transition: 0.5s;
 					p {
 						position: absolute;
-						width: 200px;
-						height: 150px;
-						top: 8%;
-						left: 40%;
+						width: 120px;
+						height: 90px;
+						top: 16%;
+						left: 38%;
 						text-align: center;
-						background: rgba(225, 225, 225, 0.6);
-						border: 4px solid rgb(255, 255, 255);
-						border-radius: 10px;
-						padding: 20px;
+						background: rgb(137, 199, 129);
+
+						border-radius: 5px;
+						padding: 10px;
 						opacity: 0;
 						transition: 0.5s;
 						span {
-							font: bold 45px/1.3 'arial';
-							color: rgb(114, 169, 107);
+							font: bold 30px/1.3 'Josefin Sans';
+							color: rgb(255, 255, 255);
 						}
-						font: 37px/1 'arial';
+						font: 20px/1 'Josefin Sans';
 						color: #444;
+						letter-spacing: 0px;
 					}
-					&:hover p {
-						opacity: 1;
+					&:hover {
+						img {
+							filter: saturate(100%);
+						}
+						p {
+							opacity: 1;
+						}
 					}
 				}
 
@@ -166,32 +175,34 @@
 						height: 330px;
 						border-radius: 10px;
 						filter: saturate(30%);
-						&:hover {
-							filter: saturate(100%);
-						}
 					}
 					p {
 						position: absolute;
-						width: 220px;
-						height: 130px;
-						top: 70%;
-						left: 65%;
+						width: 110px;
+						height: 70px;
+						top: 65%;
+						left: 80%;
 						text-align: center;
-						background: rgba(225, 225, 225, 0.6);
-						border: 4px solid rgb(255, 255, 255);
-						border-radius: 10px;
-						padding: 20px;
+						background: rgb(137, 199, 129);
+						border-radius: 5px;
+						padding: 10px;
 						opacity: 0;
 						transition: 0.5s;
 						span {
-							font: bold 45px/1.3 'arial';
-							color: rgb(114, 169, 107);
+							font: bold 25px/1.3 'Josefin Sans';
+							color: rgb(255, 255, 255);
 						}
-						font: 25px/1 'arial';
+						font: 13px/1 'Josefin Sans';
 						color: #444;
+						letter-spacing: 0px;
 					}
-					&:hover p {
-						opacity: 1;
+					&:hover {
+						img {
+							filter: saturate(100%);
+						}
+						p {
+							opacity: 1;
+						}
 					}
 				}
 
@@ -206,48 +217,50 @@
 						height: 320px;
 						border-radius: 10px;
 						filter: saturate(30%);
-						&:hover {
-							filter: saturate(100%);
-						}
 					}
 					p {
 						position: absolute;
-						width: 200px;
-						height: 130px;
-						top: 70%;
-						left: 60%;
+						width: 100px;
+						height: 70px;
+						top: 55%;
+						left: 83%;
 						text-align: center;
-						background: rgba(225, 225, 225, 0.6);
-						border: 4px solid rgb(255, 255, 255);
-						border-radius: 10px;
-						padding: 20px;
+						background: rgb(137, 199, 129);
+						border-radius: 5px;
+						padding: 10px;
 						opacity: 0;
 						transition: 0.5s;
 						span {
-							font: bold 45px/1.3 'arial';
-							color: rgb(114, 169, 107);
+							font: bold 25px/1.3 'Josefin Sans';
+							color: rgb(255, 255, 255);
 						}
-						font: 22px/1 'arial';
+						font: 11px/1 'Josefin Sans';
 						color: #444;
+						letter-spacing: 0px;
 					}
-					&:hover p {
-						opacity: 1;
+					&:hover {
+						img {
+							filter: saturate(100%);
+						}
+						p {
+							opacity: 1;
+						}
 					}
 				}
 			}
 
 			.teamTxt {
-				width: 40%;
+				width: 35%;
 				position: relative;
-				top: -480px;
+				top: -460px;
 				left: 65%;
 				h1 {
-					font: bold 45px/1 'arial';
-					color: #333;
-					margin-bottom: 30px;
+					font: bold 50px/1 'Quicksand';
+					color: rgb(114, 169, 107);
+					margin-bottom: 35px;
 				}
 				p {
-					font: 30px/1.3 'arial';
+					font: 25px/1.3 'Josefin Sans';
 					color: #333;
 				}
 			}

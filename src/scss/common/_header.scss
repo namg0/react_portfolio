@@ -12,21 +12,22 @@ header {
 			bottom: 23px;
 			left: 40px;
 			a {
-				font: bold 25px/1 'arial';
-				color: #555;
+				font: 25px/1 'Fredoka One';
+				letter-spacing: 1px;
+				color: rgb(152, 207, 145);
 				float: right;
 			}
 		}
 		#nav {
 			position: absolute;
 			bottom: 10%;
-			right: 27%;
+			right: 25%;
 			li {
 				float: left;
 				a {
 					display: inline-block;
 					padding: 20px 30px;
-					font: 14px/1 'arial';
+					font: 14px/1 'Quicksand';
 					color: #555;
 				}
 			}
@@ -40,7 +41,7 @@ header {
 				a {
 					display: inline-block;
 					padding: 20px 15px;
-					font: 15px/1 'arial';
+					font: 15px/1 'Quicksand';
 					color: #555;
 				}
 			}
@@ -62,13 +63,25 @@ header {
 		z-index: 2;
 		.inner {
 			h1 a {
-				color: #555;
+				color: rgb(152, 207, 145);
+			}
+			#nav li {
+				&:hover a {
+					color: rgb(152, 207, 145);
+				}
 			}
 			#nav li a {
 				color: #555;
 			}
+
 			.fa-bars {
 				color: #555;
+			}
+			#util li {
+				&:hover a {
+					color: rgb(86, 119, 82);
+					font-weight: bold;
+				}
 			}
 			#util li a {
 				color: #555;
