@@ -77,10 +77,12 @@
 				border-radius: 20px;
 				padding: 15px;
 				text-align: center;
+				box-shadow: 5px 5px 10px grba(0, 0, 0, 0.5);
 
 				h2 {
 					font: bold 20px/1 'Quicksand';
 					margin-bottom: 10px;
+					color: rgb(114, 169, 107);
 				}
 				p {
 					font: 15px/1 'Quicksand';

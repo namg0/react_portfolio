@@ -51,9 +51,9 @@ function Youtube() {
 									</div>
 
 									<div className='classtxt'>
-										<h2>{tit.length > 25 ? tit.substr(0, 25) + '...' : tit}</h2>
+										<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
 										<p>
-											{desc.length > 50 ? desc.substr(0, 50) + '...' : desc}
+											{desc.length > 60 ? desc.substr(0, 60) + '...' : desc}
 										</p>
 										<span>{date.split('T')[0]}</span>
 									</div>
