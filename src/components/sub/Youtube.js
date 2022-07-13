@@ -1,10 +1,13 @@
 import Layout from '../common/Layout';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Popup from '../common/Popup';
 
 function Youtube() {
 	const [Vids, setVids] = useState([]);
 	const path = process.env.PUBLIC_URL;
+	const [Open, setOpen] = useState(false);
+	const [Index, setIndex] = useState(0);
 
 	useEffect(() => {
 		const key = 'AIzaSyBLdlm9RlOXSuE2ACgPflc0wFh_G0MgGRs';
@@ -34,7 +37,7 @@ function Youtube() {
 				</section>
 
 				<section className='class'>
-					<h1>Today's hobby</h1>
+					<h1>Today's Hobby</h1>
 					<div className='inner'>
 						{Vids.map((vid, idx) => {
 							const tit = vid.snippet.title;
@@ -43,19 +46,28 @@ function Youtube() {
 
 							return (
 								<article key={idx}>
-									<div className='classPic'>
-										<img
-											src={vid.snippet.thumbnails.standard.url}
-											alt={vid.snippet.title}
-										/>
-									</div>
+									<div className='classVids'>
+										<div
+											className='classPic'
+											onClick={() => {
+												setOpen(true);
+												setIndex(idx);
+											}}>
+											<img
+												src={vid.snippet.thumbnails.standard.url}
+												alt={vid.snippet.title}
+											/>
+										</div>
 
-									<div className='classtxt'>
-										<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
-										<p>
-											{desc.length > 60 ? desc.substr(0, 60) + '...' : desc}
-										</p>
-										<span>{date.split('T')[0]}</span>
+										<div className='classtxt'>
+											<h2>
+												{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}
+											</h2>
+											<p>
+												{desc.length > 60 ? desc.substr(0, 60) + '...' : desc}
+											</p>
+											<span>{date.split('T')[0]}</span>
+										</div>
 									</div>
 								</article>
 							);
@@ -63,6 +75,13 @@ function Youtube() {
 					</div>
 				</section>
 			</Layout>
+			{Open && (
+				<Popup setOpen={setOpen}>
+					<iframe
+						src={`https://www.youtube.com/embed/${Vids[Index].snippet.resourceId.videoId}`}
+						frameborder='0'></iframe>
+				</Popup>
+			)}
 		</>
 	);
 }
