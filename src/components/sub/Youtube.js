@@ -25,7 +25,11 @@ function Youtube() {
 						<figure className='classBgPic'>
 							<img src={`${path}/img/classBg.jpg`} alt='' />
 						</figure>
-						<h1>The gratification comes in the doing, not in the results.</h1>
+
+						<h1>
+							The gratification <br /> comes in the doing,
+							<br /> not in the results
+						</h1>
 					</div>
 				</section>
 
@@ -35,9 +39,10 @@ function Youtube() {
 							const tit = vid.snippet.title;
 							const desc = vid.snippet.description;
 							const date = vid.snippet.publishedAt;
-							<h1>CLASS FOR YOU</h1>;
+
 							return (
 								<article key={idx}>
+									<h1>Today's hobby</h1>
 									<div className='classPic'>
 										<img
 											src={vid.snippet.thumbnails.standard.url}

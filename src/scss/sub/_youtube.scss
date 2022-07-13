@@ -1,0 +1,66 @@
+.Youtube {
+	.classBg {
+		margin-bottom: 30px;
+		> .inner {
+			left: -160px;
+			top: -101px;
+			width: 126.7%;
+			height: 770px;
+			position: relative;
+			margin: 0 auto;
+			overflow: hidden;
+
+			.classBgPic {
+				width: 100%;
+
+				img {
+					position: absolute;
+					left: 0px;
+					top: -0px;
+					width: 100%;
+					height: 100%;
+					// width: 1495px;
+					object-fit: cover;
+					opacity: 1;
+				}
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+
+					width: 100%;
+					height: 100%;
+					background: rgb(0, 0, 0);
+					opacity: 0.2;
+				}
+			}
+			h1 {
+				position: absolute;
+				right: 10px;
+				top: 40px;
+				font: bold 110px/1 'Josefin Sans';
+				color: rgb(255, 255, 255);
+				// border: 7px solid rgb(255, 255, 255);
+				padding: 50px;
+				border-radius: 5px;
+				text-align: right;
+				margin: 0;
+			}
+		}
+	}
+
+	.class {
+		width: 100%;
+		> .inner {
+			width: 1180px;
+			position: relative;
+			margin: 0 auto;
+
+			h1 {
+				font: bold 50px/1 'Josefin Sans';
+			}
+		}
+	}
+}
