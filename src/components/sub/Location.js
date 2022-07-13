@@ -88,13 +88,6 @@ function Location() {
 						</article>
 					</div>
 				</section>
-
-				{/* <section className='qna'>
-					<div className='inner'>
-						<h1 className='qnaH'>Do you have any questions?</h1>
-						<NavLink to='/community'>Click Me ></NavLink>
-					</div>
-				</section> */}
 			</div>
 		</Layout>
 	);
