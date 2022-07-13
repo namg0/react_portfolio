@@ -34,6 +34,7 @@ function Youtube() {
 				</section>
 
 				<section className='class'>
+					<h1>Today's hobby</h1>
 					<div className='inner'>
 						{Vids.map((vid, idx) => {
 							const tit = vid.snippet.title;
@@ -42,7 +43,6 @@ function Youtube() {
 
 							return (
 								<article key={idx}>
-									<h1>Today's hobby</h1>
 									<div className='classPic'>
 										<img
 											src={vid.snippet.thumbnails.standard.url}
@@ -51,9 +51,9 @@ function Youtube() {
 									</div>
 
 									<div className='classtxt'>
-										<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
+										<h2>{tit.length > 25 ? tit.substr(0, 25) + '...' : tit}</h2>
 										<p>
-											{desc.length > 100 ? desc.substr(0, 100) + '...' : desc}
+											{desc.length > 50 ? desc.substr(0, 50) + '...' : desc}
 										</p>
 										<span>{date.split('T')[0]}</span>
 									</div>
