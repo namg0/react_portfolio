@@ -4,8 +4,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { useRef, useEffect } from 'react';
 function Location() {
-	// 35.1602001!4d129.1665767
+	const { kakao } = window;
+	const container = useRef(null);
+	const mapOption = {
+		center: new kakao.maps.LatLng(35.1602001, 129.1665767),
+		level: 3,
+	};
+
+	useEffect(() => {
+		const map_result = new kakao.maps.Map(container.current, mapOption);
+
+		const markerPosition = new kakao.maps.LatLng(35.1602001, 129.1665767);
+
+		const marker = new kakao.maps.Marker({
+			position: markerPosition,
+		});
+
+		marker.setMap(map_result);
+
+		const mapTypeControl = new kakao.maps.MapTypeControl();
+
+		map_result.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPLEFT);
+
+		const zoomControl = new kakao.maps.ZoomControl();
+		map_result.addControl(zoomControl, kakao.maps.ControlPosition.BOTTOMLEFT);
+	}, []);
 	return (
 		<Layout name={'Location'}>
 			<section className='contactUs'>
@@ -38,13 +63,39 @@ function Location() {
 					</div>
 				</div>
 			</section>
-			{/* <div id='map' ref={container}></div> */}
+
+			<div id='map' ref={container}></div>
+
 			<section className='booking'>
-				<h1>
-					I'M READY FOR <br /> BETTER BOOKING
-				</h1>
-				<NavLink to='/join'>Join</NavLink>
+				<div className='inner'>
+					<h1>
+						I'M READY FOR <br /> BETTER BOOKING
+					</h1>
+					<NavLink to='/join'>Sign Up</NavLink>
+				</div>
 			</section>
+
+			<div className='locaB'>
+				<section className='qna'>
+					<div className='inner'>
+						<article>
+							<h1 className='qnaA'>More About HobbyBox</h1>
+							<NavLink to='/department'>About Us> </NavLink>
+						</article>
+						<article>
+							<h1 className='qnaH'>Do you have any questions?</h1>
+							<NavLink to='/community'>Click Me ></NavLink>
+						</article>
+					</div>
+				</section>
+
+				{/* <section className='qna'>
+					<div className='inner'>
+						<h1 className='qnaH'>Do you have any questions?</h1>
+						<NavLink to='/community'>Click Me ></NavLink>
+					</div>
+				</section> */}
+			</div>
 		</Layout>
 	);
 }

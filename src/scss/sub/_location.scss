@@ -1,62 +1,125 @@
-.contactUs {
-	width: 100%;
-	> .inner {
-		width: 1180px;
-		margin: 0 auto;
-		position: relative;
-		text-align: center;
-		h1 {
-			font: bold 50px/1 'Quicksand';
-			color: rgb(114, 169, 107);
-			margin-bottom: 15px;
-		}
-		p {
-			font: 20px/1.2 'Josefin Sans';
-			margin-bottom: 40px;
-		}
-		.icon {
-			display: flex;
-			justify-content: space-between;
-			width: 70%;
-			position: absolute;
-			left: 15%;
+.Location {
+	.contactUs {
+		width: 100%;
+		> .inner {
+			width: 1180px;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			h1 {
+				font: bold 50px/1 'Quicksand';
+				color: rgb(114, 169, 107);
+				margin-bottom: 15px;
+			}
+			p {
+				font: 20px/1.2 'Josefin Sans';
+				margin-bottom: 40px;
+			}
+			.icon {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
 
-			> article {
-				width: 30%;
-				height: 200px;
-				background: #fff;
-				padding: 30px 20px;
+				> article {
+					width: 30%;
+					height: 200px;
+					background: #fff;
+					padding: 30px 20px;
 
-				> h2 {
-					font-family: Quicksand;
-					margin-top: 20px;
-				}
-				> p {
-					font-size: 15px;
-					margin-top: 10px;
-				}
-				.fa-location-dot,
-				.fa-phone,
-				.fa-envelope {
-					font-size: 35px;
-					color: rgb(114, 169, 107);
+					> h2 {
+						font-family: Quicksand;
+						margin-top: 20px;
+					}
+					> p {
+						font-size: 15px;
+						margin-top: 10px;
+					}
+					.fa-location-dot,
+					.fa-phone,
+					.fa-envelope {
+						font-size: 35px;
+						color: rgb(114, 169, 107);
+					}
 				}
 			}
 		}
 	}
-}
-// map
 
-.booking {
-	margin-top: 900px;
-	// &::before {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 126.7%;
-	// 	height: 300px;
-	// 	background: yellow;
-	// 	position: absolute;
-	// 	left: -160px;
-	// 	top: 200%;
-	// }
+	#map {
+		margin-top: 60px;
+		width: 100%;
+		height: 600px;
+		background: #000;
+	}
+
+	.booking {
+		width: 100%;
+		> .inner {
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+			margin-top: 200px;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 126.7%;
+			height: 250px;
+			background: rgb(244, 176, 219);
+			position: absolute;
+			left: -160px;
+			top: 72%;
+		}
+		h1 {
+			font: bold 55px/1 'Josefin Sans';
+			color: rgb(255, 255, 255);
+			margin-bottom: 40px;
+		}
+		a {
+			display: block;
+			position: absolute;
+			top: 130px;
+			left: 44%;
+			width: 150px;
+			background: #fff;
+			padding: 7px;
+			transition: 0.5s;
+			font: bold 15px/1 'Quicksand';
+			color: rgb(255, 172, 225);
+			&:hover {
+				background: rgb(152, 207, 145);
+				color: #fff;
+			}
+		}
+	}
+
+	.locaB {
+		margin-top: 200px;
+		width: 100%;
+		.qna {
+			width: 100%;
+			> .inner {
+				width: 1180px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 10px 150px;
+				text-align: center;
+				.qnaA,
+				.qnaH {
+					font: bold 20px/1 'Quicksand';
+					color: #333;
+					margin-bottom: 20px;
+				}
+				a {
+					font: bold 15px/1 'Quicksand';
+					color: rgb(114, 169, 107);
+					&:hover {
+						color: rgb(255, 172, 225);
+					}
+				}
+			}
+		}
+	}
 }
