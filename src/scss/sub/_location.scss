@@ -1,0 +1,62 @@
+.contactUs {
+	width: 100%;
+	> .inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		h1 {
+			font: bold 50px/1 'Quicksand';
+			color: rgb(114, 169, 107);
+			margin-bottom: 15px;
+		}
+		p {
+			font: 20px/1.2 'Josefin Sans';
+			margin-bottom: 40px;
+		}
+		.icon {
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			position: absolute;
+			left: 15%;
+
+			> article {
+				width: 30%;
+				height: 200px;
+				background: #fff;
+				padding: 30px 20px;
+
+				> h2 {
+					font-family: Quicksand;
+					margin-top: 20px;
+				}
+				> p {
+					font-size: 15px;
+					margin-top: 10px;
+				}
+				.fa-location-dot,
+				.fa-phone,
+				.fa-envelope {
+					font-size: 35px;
+					color: rgb(114, 169, 107);
+				}
+			}
+		}
+	}
+}
+// map
+
+.booking {
+	margin-top: 900px;
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 126.7%;
+	// 	height: 300px;
+	// 	background: yellow;
+	// 	position: absolute;
+	// 	left: -160px;
+	// 	top: 200%;
+	// }
+}
