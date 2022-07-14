@@ -11,7 +11,8 @@ function Youtube() {
 
 	useEffect(() => {
 		const key = 'AIzaSyBLdlm9RlOXSuE2ACgPflc0wFh_G0MgGRs';
-		const playlist = 'PLPBzlS6qg86eDlAonSIK-HJaWxfzx_655';
+		const playlist = 'PLPBzlS6qg86dubydgHXGKYPvm2umIRO5A';
+
 		const num = 4;
 		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlist}&maxResults=${num}`;
 		axios.get(url).then((json) => {
@@ -29,14 +30,14 @@ function Youtube() {
 							<img src={`${path}/img/classBg.jpg`} alt='' />
 						</figure>
 
-						<h1 className='youtubeH'>
+						<h1>
 							The gratification <br /> comes in the doing,
 							<br /> not in the results
 						</h1>
 					</div>
 				</section>
 
-				<section className='class'>
+				<section className='class2'>
 					<h1>Today's Hobby</h1>
 					<div className='inner'>
 						{Vids.map((vid, idx) => {
@@ -46,9 +47,9 @@ function Youtube() {
 
 							return (
 								<article key={idx}>
-									<div className='classVids'>
+									<div className='classVids2'>
 										<div
-											className='classPic'
+											className='classPic2'
 											onClick={() => {
 												setOpen(true);
 												setIndex(idx);
@@ -59,7 +60,7 @@ function Youtube() {
 											/>
 										</div>
 
-										<div className='classtxt'>
+										<div className='classtxt2'>
 											<h2>
 												{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}
 											</h2>

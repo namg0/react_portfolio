@@ -30,6 +30,11 @@ function Header(props) {
 							Youtube
 						</NavLink>
 					</li>
+					{/* <li>
+						<NavLink to='/youtube2' activeStyle={active}>
+							Youtube2
+						</NavLink>
+					</li> */}
 					<li>
 						<NavLink to='/community' activeStyle={active}>
 							Community

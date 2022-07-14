@@ -16,19 +16,19 @@ function Footer() {
 				</div>
 				<ul className='navF'>
 					<li>
-						<NavLink to='/department'>About Us</NavLink>
+						<NavLink to='/department'>Department</NavLink>
 					</li>
 					<li>
 						<NavLink to='/gallery'>Gallery</NavLink>
 					</li>
 					<li>
-						<NavLink to='/youtube'>Class</NavLink>
+						<NavLink to='/youtube'>Youtube</NavLink>
 					</li>
 					<li>
 						<NavLink to='/community'>Community</NavLink>
 					</li>
 					<li>
-						<NavLink to='/location'>Contact Us</NavLink>
+						<NavLink to='/location'>Location</NavLink>
 					</li>
 				</ul>
 				<div className='subscribe'>
@@ -40,7 +40,9 @@ function Footer() {
 						placeholder='Enter your email'
 					/>
 					<li>
-						<NavLink to='/join'>Go</NavLink>
+						<NavLink to='/join'>
+							<span>Go</span>
+						</NavLink>
 					</li>
 				</div>
 				<p>2022 HOBBYBOX &copy; All Rights Reserved.</p>

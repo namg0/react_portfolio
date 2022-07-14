@@ -92,9 +92,11 @@ footer {
 				padding: 3px;
 				font: 17px/1.5 'Quicksand';
 				color: #fff;
-				&:hover {
-					font-weight: bold;
+				span {
 					color: #fff;
+				}
+				&:hover span {
+					font-weight: bold;
 				}
 			}
 		}
