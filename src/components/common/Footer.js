@@ -4,9 +4,9 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+function Footer(props) {
 	return (
-		<footer>
+		<footer className={props.type}>
 			<div className='inner'>
 				<h1>HOBBYBOX</h1>
 				<div className='icons'>

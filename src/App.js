@@ -12,7 +12,6 @@ import Content from './components/main/Content';
 import Department from './components/sub/Department';
 import Gallery from './components/sub/Gallery';
 import Youtube from './components/sub/Youtube';
-import Youtube2 from './components/sub/Youtube2';
 import Community from './components/sub/Community';
 import Location from './components/sub/Location';
 import Members from './components/sub/Members';
@@ -32,25 +31,36 @@ function App() {
 					<Header type={'main'} />
 					<Visual />
 					<Content />
+					<Footer type={'main'} />
 				</Route>
 
 				{/* sub */}
 				<Route path='/'>
 					<Header type={'sub'} />
+					{/* nav */}
+					<Route path='/department' component={Department} />
+					<Route path='/gallery' component={Gallery} />
+					<Route path='/youtube' component={Youtube} />
+					<Route path='/community' component={Community} />
+					<Route path='/location' component={Location} />
+					<Route path='/members' component={Members} />
+					{/* util */}
+					<Route path='/login' component={Login} />
+					<Route path='/join' component={Join} />
+					<Footer type={'sub'} />
 				</Route>
 			</Switch>
 			{/* nav */}
-			<Route path='/department' component={Department} />
+			{/* <Route path='/department' component={Department} />
 			<Route path='/gallery' component={Gallery} />
 			<Route path='/youtube' component={Youtube} />
-			<Route path='/youtube2' component={Youtube2} />
 			<Route path='/community' component={Community} />
 			<Route path='/location' component={Location} />
-			<Route path='/members' component={Members} />
+			<Route path='/members' component={Members} /> */}
 			{/* util */}
-			<Route path='/login' component={Login} />
-			<Route path='/join' component={Join} />
-			<Footer />
+			{/* <Route path='/login' component={Login} />
+			<Route path='/join' component={Join} /> */}
+			{/* <Footer /> */}
 		</>
 	);
 }

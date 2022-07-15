@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 function Header(props) {
 	const active = {
 		fontWeight: 'bold',
-		color: 'rgb(91, 130, 86)',
+		color: 'rgb(186, 120, 120)',
 	};
 	return (
 		<header className={props.type}>
@@ -25,16 +25,12 @@ function Header(props) {
 							Gallery
 						</NavLink>
 					</li>
+
 					<li>
 						<NavLink to='/youtube' activeStyle={active}>
 							Youtube
 						</NavLink>
 					</li>
-					{/* <li>
-						<NavLink to='/youtube2' activeStyle={active}>
-							Youtube2
-						</NavLink>
-					</li> */}
 					<li>
 						<NavLink to='/community' activeStyle={active}>
 							Community

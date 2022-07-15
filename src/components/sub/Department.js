@@ -8,7 +8,7 @@ function Department() {
 		<Layout name={'Department'}>
 			<section className='about'>
 				<div className='inner'>
-					<h1>About Us</h1>
+					<h1>About Us.</h1>
 					<div className='aboutTxt'>
 						<h2>
 							More About Us <br /> Our Services <br /> Our Story
@@ -71,7 +71,7 @@ function Department() {
 						</article>
 					</div>
 					<div className='teamTxt'>
-						<h1>Our Team</h1>
+						<h1>Our Team.</h1>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Aspernatur, ad laudantium doloribus quae quidem error recusandae

@@ -1,8 +1,8 @@
 footer {
 	width: 100%;
 	height: 250px;
-	border-top: 4px solid rgb(152, 207, 145);
-	background: rgb(152, 207, 145);
+	// border-top: 2px solid rgb(242, 188, 188);
+	background: rgb(242, 188, 188);
 	padding: 10px 0px;
 	margin-top: 50px;
 
@@ -15,11 +15,11 @@ footer {
 		left: 0px;
 
 		h1 {
-			font: 25px/1 'Fredoka One';
-			letter-spacing: 1px;
+			font: bold 25px/1 'El Messiri';
+			letter-spacing: 1.5px;
 			color: rgb(255, 255, 255);
 			position: absolute;
-			top: 3%;
+			top: 6%;
 			left: 40px;
 		}
 		.icons {
@@ -50,7 +50,7 @@ footer {
 
 			a {
 				color: rgb(255, 255, 255);
-				font: 13px/1 'Quicksand';
+				font: 15px/1 'Mukta Malar';
 				display: inline-block;
 				padding: 10px 20px;
 			}
@@ -66,7 +66,8 @@ footer {
 				position: absolute;
 				right: 5%;
 				width: 270px;
-				font: bold 22px/1 'Quicksand';
+				font: bold 22px/1 'Mukta Malar';
+				letter-spacing: 1.3px;
 				color: rgb(255, 255, 255);
 			}
 			input {
@@ -78,7 +79,7 @@ footer {
 				height: 35px;
 				border: 1px solid #fff;
 				padding: 10px;
-				color: rgb(152, 207, 145);
+				color: rgb(177, 135, 135);
 			}
 			li {
 				position: absolute;
@@ -87,11 +88,11 @@ footer {
 				top: 46.3px;
 				width: 48px;
 				height: 35px;
-				background: rgb(255, 172, 225);
+				background: #777;
 				text-align: center;
 				padding: 3px;
-				font: 17px/1.5 'Quicksand';
-				color: #fff;
+				font: 17px/1.5 'Mukta Malar';
+
 				span {
 					color: #fff;
 				}
@@ -119,5 +120,128 @@ footer {
 		width: 100%;
 		height: 1px;
 		background: #eee;
+	}
+	&.sub {
+		width: 100%;
+		height: 250px;
+		// border-top: 4px solid rgb(242, 188, 188);
+		background: rgb(255, 255, 255);
+		padding: 10px 0px;
+		margin-top: 50px;
+		.inner {
+			width: 1180px;
+			height: 100%;
+			margin: 0px auto;
+			position: relative;
+			bottom: 0px;
+			left: 0px;
+
+			h1 {
+				font: bold 25px/1 'El Messiri';
+				letter-spacing: 1.5px;
+				color: rgb(242, 188, 188);
+				position: absolute;
+				top: 6%;
+				left: 40px;
+			}
+			.icons {
+				float: left;
+				position: absolute;
+				top: 20%;
+				left: 46px;
+				font-size: 23px;
+				color: rgb(242, 188, 188);
+
+				.fa-facebook-f {
+					padding: 10px 10px;
+				}
+
+				.fa-instagram {
+					padding: 10px 10px;
+				}
+
+				.fa-youtube {
+					padding: 10px 10px;
+				}
+			}
+			.navF {
+				position: absolute;
+				top: 40%;
+				left: 23%;
+				display: flex;
+
+				a {
+					color: rgb(242, 188, 188);
+					font: 15px/1 'Mukta Malar';
+					display: inline-block;
+					padding: 10px 20px;
+				}
+			}
+			.subscribe {
+				position: relative;
+				width: 100%;
+				height: 80%;
+				right: 0%;
+				top: 20%;
+
+				h2 {
+					position: absolute;
+					right: 5%;
+					width: 270px;
+					font: bold 22px/1 'Mukta Malar';
+					letter-spacing: 1.3px;
+					color: rgb(242, 188, 188);
+				}
+				input {
+					position: absolute;
+					right: 8%;
+					top: 20%;
+					margin-top: 10px;
+					width: 236px;
+					height: 35px;
+					border: 1px solid rgb(242, 188, 188);
+					padding: 10px;
+					color: rgb(177, 135, 135);
+				}
+				li {
+					position: absolute;
+					display: block;
+					right: 3.9%;
+					top: 46.7px;
+					width: 48px;
+					height: 35.2px;
+					background: rgb(242, 188, 188);
+					text-align: center;
+					padding: 3px;
+					font: 17px/1.5 'Mukta Malar';
+
+					span {
+						color: #fff;
+					}
+					&:hover span {
+						font-weight: bold;
+					}
+				}
+			}
+
+			p {
+				position: absolute;
+				bottom: 0%;
+				left: 40%;
+
+				font: 10px/1 'arial';
+				color: #bbb;
+				letter-spacing: 2px;
+			}
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: relative;
+			bottom: 9%;
+			width: 100%;
+			height: 1px;
+			background: #eee;
+		}
 	}
 }

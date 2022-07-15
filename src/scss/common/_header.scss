@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Courgette&family=DM+Serif+Display:ital@1&family=El+Messiri&family=Ibarra+Real+Nova&family=Julius+Sans+One&family=Mukta+Malar:wght@300&family=Playball&family=Roboto+Slab:wght@300&display=swap');
+
 header {
 	width: 100%;
 	background: #fff;
@@ -12,22 +14,24 @@ header {
 			bottom: 23px;
 			left: 40px;
 			a {
-				font: 25px/1 'Fredoka One';
-				letter-spacing: 1px;
-				color: rgb(152, 207, 145);
+				font: bold 25px/1 'El Messiri';
+				letter-spacing: 1.5px;
+				color: rgb(244, 178, 188);
 				float: right;
 			}
 		}
 		#nav {
 			position: absolute;
-			bottom: 10%;
+			bottom: 40%;
 			right: 25%;
 			li {
 				float: left;
+				margin-right: 50px;
+
 				a {
 					display: inline-block;
-					padding: 20px 30px;
-					font: 14px/1 'Quicksand';
+					background: rgba(242, 188, 188, 0);
+					font: 15px/1 'Mukta Malar';
 					color: #555;
 				}
 			}
@@ -41,7 +45,7 @@ header {
 				a {
 					display: inline-block;
 					padding: 20px 15px;
-					font: 15px/1 'Quicksand';
+					font: 15px/1 'Mukta Malar';
 					color: #555;
 				}
 			}
@@ -63,11 +67,12 @@ header {
 		z-index: 2;
 		.inner {
 			h1 a {
-				color: rgb(152, 207, 145);
+				color: rgb(242, 188, 188);
 			}
 			#nav li {
 				&:hover a {
-					color: rgb(152, 207, 145);
+					background: rgba(242, 188, 188, 1);
+					height: 10px;
 				}
 			}
 			#nav li a {
@@ -75,11 +80,11 @@ header {
 			}
 
 			.fa-bars {
-				color: #555;
+				color: rgb(242, 188, 188);
 			}
 			#util li {
 				&:hover a {
-					color: rgb(255, 172, 225);
+					color: rgb(200, 132, 132);
 				}
 			}
 			#util li a {
@@ -88,20 +93,32 @@ header {
 		}
 	}
 	&.sub {
-		background: rgb(152, 207, 145);
-		border-bottom: 1px solid rgb(255, 255, 255);
+		background: rgb(242, 188, 188);
+		border-bottom: 1px solid rgb(242, 188, 188);
 		.inner {
 			h1 a {
 				color: #fff;
 			}
+
 			#nav li a {
-				color: #fff;
+				color: #666;
+			}
+			#nav li {
+				&:hover a {
+					background: rgb(251, 229, 229);
+					height: 10px;
+				}
 			}
 			.fa-bars {
 				color: #fff;
 			}
 			#util li a {
-				color: #fff;
+				color: #666;
+			}
+			#util li {
+				&:hover a {
+					color: rgb(255, 255, 255);
+				}
 			}
 		}
 	}

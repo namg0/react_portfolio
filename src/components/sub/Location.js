@@ -35,7 +35,7 @@ function Location() {
 		<Layout name={'Location'}>
 			<section className='contactUs'>
 				<div className='inner'>
-					<h1>Contact Us</h1>
+					<h1>Contact Us.</h1>
 					<p>
 						Fugiat veniam nobis minima iste quas vitae beatae harum obcaecati
 						natus dolore odio, <br /> culpa laborum! Expedita eius mollitia
