@@ -67,15 +67,83 @@ function Join() {
 									/>
 								</td>
 							</tr>
+
+							{/* AGE */}
+							<tr>
+								<th scope='row'>
+									<label htmlFor='edu'>AGE</label>
+								</th>
+								<td>
+									<select name='age' id='age'>
+										<option value=''>Select an age group</option>
+										<option value='teenage'>10대</option>
+										<option value='twenty'>20대</option>
+										<option value='thirty'>30대</option>
+										<option value='forty'>40대</option>
+										<option value='fifties'>50대</option>
+										<option value='other'>기타</option>
+									</select>
+								</td>
+							</tr>
+
+							{/* GENDER */}
+							<tr>
+								<th scope='row'>GENDER</th>
+								<td>
+									<label htmlFor='male'>MALE</label>
+									<input type='radio' id='male' name='gender' />
+									<label htmlFor='female'>FEMALE</label>
+									<input type='radio' id='female' name='gender' />
+								</td>
+							</tr>
+
+							{/* INTERESTS */}
+							<tr>
+								<th scope='row'>INTERESTS</th>
+								<td>
+									<label htmlFor='design'>Design</label>
+									<input type='checkbox' id='design' name='interests' />
+
+									<label htmlFor='craft'>Craft</label>
+									<input type='checkbox' id='craft' name='interests' />
+
+									<label htmlFor='language'>Language</label>
+									<input type='checkbox' id='language' name='interests' />
+
+									<label htmlFor='baking'>Baking</label>
+									<input type='checkbox' id='baking' name='interests' />
+
+									<label htmlFor='cooking'>Cooking</label>
+									<input type='checkbox' id='cooking' name='interests' />
+
+									<label htmlFor='programming'>Programming</label>
+									<input type='checkbox' id='programming' name='interests' />
+								</td>
+							</tr>
+
+							{/* comments */}
+							<tr>
+								<th scope='row'>
+									<label htmlFor='comments'>COMMENTS</label>
+								</th>
+								<td>
+									<textarea
+										name='comments'
+										id='comments'
+										cols='30'
+										rows='5'></textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<th colSpan='2'>
+									<input type='reset' value='CANCEL' />
+									<input type='submit' value='SEND' />
+								</th>
+							</tr>
 						</tbody>
 					</table>
 				</fieldset>
-			</div>
-			<div className='signIn'>
-				<div>
-					<h1>Welcome Back</h1>
-					<NavLink to='/login'>Sign In</NavLink>
-				</div>
 			</div>
 		</Layout>
 	);
