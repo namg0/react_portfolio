@@ -4,7 +4,16 @@ import { NavLink } from 'react-router-dom';
 function Join() {
 	return (
 		<Layout name={'Join'}>
+			<div className='signUpL'>
+				<span>HOBBY BOX</span>
+				<h1 className='signUpLH'>
+					Lorem ipsum dolor sit, amet consectetur adipisicing.
+				</h1>
+				<p className='signUpLP'>Lorem ipsum dolor sit amet.</p>
+			</div>
 			<div className='signUp'>
+				<h1 className='signUpRH'>Sign Up to Start a Hobby</h1>
+				<p className='signUpRP'>Enter your details below.</p>
 				<fieldset>
 					<legend className='h'>회원가입 폼 양식</legend>
 					<table>
