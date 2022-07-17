@@ -1,0 +1,151 @@
+.Join {
+	width: 100%;
+	height: 1050px;
+	overflow: hidden;
+	position: relative;
+
+	.signUpbg {
+		position: absolute;
+		top: -100px;
+		height: 1300px;
+		width: 100%;
+
+		> img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.joinTab {
+		position: relative;
+		height: 500px;
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		top: 160px;
+		justify-content: center;
+		align-items: center;
+
+		.signUpL {
+			width: 30%;
+			height: 170%;
+			padding: 200px 30px;
+			background: rgba(255, 255, 255, 0.4);
+			text-align: center;
+			color: #333;
+			span {
+				font: 17px/1 'Mukta Malar';
+			}
+			h1 {
+				font: bold 25px/1.2 'Mukta Malar';
+				margin-top: 15px;
+			}
+			p {
+				font: 15px/1 'Mukta Malar';
+				margin-top: 80px;
+			}
+			.signUpicons {
+				margin-top: 150px;
+				color: #333;
+				.fa-facebook-f {
+					font-size: 17px;
+					border: 3px solid rgb(220, 129, 129);
+					border-radius: 50%;
+					padding: 12px 14px;
+					margin-right: 5px;
+				}
+				.fa-instagram {
+					font-size: 15px;
+					border: 3px solid rgb(220, 129, 129);
+					border-radius: 50%;
+					padding: 12px 12px;
+					margin-right: 5px;
+				}
+				.fa-youtube {
+					font-size: 17px;
+					border: 3px solid rgb(220, 129, 129);
+					border-radius: 50%;
+					padding: 12px 10px;
+					margin-right: 5px;
+				}
+			}
+		}
+		.signUpR {
+			width: 60%;
+			height: 170%;
+			background: #fff;
+			padding: 30px 40px;
+			.signUpRH {
+				font: bold 30px/1 'Mukta Malar';
+				color: #333;
+				margin-top: 10px;
+			}
+			.signUpRP {
+				font: 17px/1 'Mukta Malar';
+				color: #333;
+				margin-top: 10px;
+			}
+			table {
+				width: 100%;
+				border: none;
+				text-align: left;
+				margin-top: 30px;
+				font: 18px/1 'Mukta Malar';
+				color: #333;
+				th {
+					width: 28%;
+					border: none;
+					padding: 5px 30px;
+					&:last-child {
+						text-align: center;
+					}
+					input[type='reset'],
+					input[type='submit'] {
+						color: #fff;
+						border: none;
+						background: rgb(220, 129, 129);
+						width: 120px;
+						height: 30px;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						margin: 20px 30px;
+						cursor: pointer;
+					}
+				}
+				td {
+					font: 15px/1 'Mukta Malar';
+					border: none;
+					padding: 5px 15px;
+					input[type='text'],
+					input[type='password'],
+					select,
+					textarea {
+						width: 80%;
+						padding: 6px 10px;
+						resize: none;
+						color: #555;
+						font: 15px/1 'Mukta Malar';
+					}
+					label {
+						margin-right: 3px;
+						font-size: 13px/1;
+					}
+					input[type='radio'],
+					input[type='checkbox'] {
+						margin-right: 10px;
+					}
+					.err {
+						font: 12px/1.2 'arial';
+						letter-spacing: 1px;
+						color: rgb(220, 129, 129);
+						display: block;
+						text-align: left;
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
+}

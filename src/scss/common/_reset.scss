@@ -15,3 +15,16 @@ a {
 body {
 	background: #f9f1f4;
 }
+table,
+th,
+td {
+	border-collapse: collapse;
+}
+fieldset {
+	border: none;
+}
+.h {
+	position: absolute;
+	top: -999999px;
+	opacity: 0;
+}
