@@ -46,11 +46,6 @@ function Header(props) {
 
 				<ul id='util'>
 					<li>
-						<NavLink to='/login' activeStyle={active}>
-							Login
-						</NavLink>
-					</li>
-					<li>
 						<NavLink to='/join' activeStyle={active}>
 							Join
 						</NavLink>

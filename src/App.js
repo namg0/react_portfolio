@@ -17,7 +17,6 @@ import Location from './components/sub/Location';
 import Members from './components/sub/Members';
 
 //sub util
-import Login from './components/sub/Login';
 import Join from './components/sub/Join';
 
 import './scss/style.scss';
@@ -45,7 +44,6 @@ function App() {
 					<Route path='/location' component={Location} />
 					<Route path='/members' component={Members} />
 					{/* util */}
-					<Route path='/login' component={Login} />
 					<Route path='/join' component={Join} />
 					<Footer type={'sub'} />
 				</Route>

@@ -100,6 +100,7 @@
 				position: absolute;
 				right: 0%;
 				top: 0px;
+				filter: grayscale(10%);
 
 				img {
 					width: 100%;
@@ -128,8 +129,7 @@
 					height: 350px;
 					object-fit: cover;
 					margin-bottom: 20px;
-
-					filter: saturate(30%);
+					filter: saturate(20%);
 				}
 
 				.team1 {
@@ -156,7 +156,7 @@
 					}
 					&:hover {
 						img {
-							filter: saturate(110%);
+							filter: saturate(80%);
 						}
 						p {
 							opacity: 1;

@@ -10,9 +10,15 @@ function Footer(props) {
 			<div className='inner'>
 				<h1>HOBBYBOX</h1>
 				<div className='icons'>
-					<FontAwesomeIcon icon={faFacebookF} />
-					<FontAwesomeIcon icon={faInstagram} />
-					<FontAwesomeIcon icon={faYoutube} />
+					<a href='https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D2069acdd-b5bb-4ed9-8dc0-92f91cb95ec2%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow'>
+						<FontAwesomeIcon icon={faFacebookF} />
+					</a>
+					<a href='https://www.instagram.com/'>
+						<FontAwesomeIcon icon={faInstagram} />
+					</a>
+					<a href='https://www.youtube.com/'>
+						<FontAwesomeIcon icon={faYoutube} />
+					</a>
 				</div>
 				<ul className='navF'>
 					<li>

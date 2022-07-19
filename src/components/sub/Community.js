@@ -24,10 +24,32 @@ function Community() {
 				content:
 					'Voluptas ratione velit expedita commodi dolor illum corporis sit sint.',
 			},
-			{ title: 'a lecture extension', content: 'Lorem ipsum dolor sit.' },
+			{ title: 'A lecture extension', content: 'Lorem ipsum dolor sit.' },
 			{
-				title: 'annual membership',
+				title: 'Playback error',
 				content: 'Quidem molestiae voluptatibus aliquid cum ipsum harum.',
+			},
+			{
+				title: 'Change authentication device',
+				content: 'Labore esse aperiam voluptates eum laboriosam ea minima',
+			},
+			{
+				title: 'An intermediate refund',
+				content:
+					'Sit neque aperiam nobis temporibus nam voluptate autem aspernatur accusantium sequi odio',
+			},
+			{
+				title: 'Submission of assignment',
+				content: 'Adipisci labore a. Ut, provident officia.',
+			},
+			{
+				title: 'Subtitle error',
+				content:
+					'Autem aspernatur accusantium sequi odio praesentium molestiae ipsum et.',
+			},
+			{
+				title: 'Annual membership',
+				content: 'Id voluptate illo ad dolor expedita sint dolores.',
 			},
 		];
 
