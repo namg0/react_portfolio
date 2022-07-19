@@ -1,14 +1,14 @@
 import Layout from '../common/Layout';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Popup from '../common/Popup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
 
 function Youtube() {
+	const pop = useRef(null);
 	const [Vids, setVids] = useState([]);
 	const path = process.env.PUBLIC_URL;
-	const [Open, setOpen] = useState(false);
 	const [Index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -71,7 +71,7 @@ function Youtube() {
 										<div
 											className='classPic'
 											onClick={() => {
-												setOpen(true);
+												pop.current.open();
 												setIndex(idx);
 											}}>
 											<img
@@ -86,13 +86,14 @@ function Youtube() {
 					</div>
 				</section>
 			</Layout>
-			{Open && (
-				<Popup setOpen={setOpen}>
+
+			<Popup ref={pop}>
+				{Vids.length !== 0 && (
 					<iframe
 						src={`https://www.youtube.com/embed/${Vids[Index].snippet.resourceId.videoId}`}
 						frameborder='0'></iframe>
-				</Popup>
-			)}
+				)}
+			</Popup>
 		</>
 	);
 }
