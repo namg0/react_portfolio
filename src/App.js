@@ -14,7 +14,6 @@ import Gallery from './components/sub/Gallery';
 import Youtube from './components/sub/Youtube';
 import Community from './components/sub/Community';
 import Location from './components/sub/Location';
-import Members from './components/sub/Members';
 
 //sub util
 import Join from './components/sub/Join';
@@ -42,7 +41,6 @@ function App() {
 					<Route path='/youtube' component={Youtube} />
 					<Route path='/community' component={Community} />
 					<Route path='/location' component={Location} />
-					<Route path='/members' component={Members} />
 					{/* util */}
 					<Route path='/join' component={Join} />
 					<Footer type={'sub'} />

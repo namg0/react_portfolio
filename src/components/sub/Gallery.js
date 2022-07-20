@@ -85,7 +85,7 @@ function Gallery() {
 							frame.current.classList.remove('on');
 							getFlickr({ type: 'user', user: '195940776@N07' });
 						}}>
-						My Gallery
+						Our Gallery
 					</button>
 					<div className='searchBox'>
 						<input

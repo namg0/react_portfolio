@@ -142,7 +142,7 @@ function Community() {
 					<article>
 						<div className='faqTxt'>
 							<h2>01</h2>
-							<h3>ID, password search</h3>
+							<h3>Password search</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
 								aperiam omnis. Unde.
@@ -152,7 +152,7 @@ function Community() {
 					<article>
 						<div className='faqTxt'>
 							<h2>02</h2>
-							<h3>a lecture refund</h3>
+							<h3>A lecture refund</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
 								rem ipsum deserunt ipsa sit, officia amet modi nihil incidunt

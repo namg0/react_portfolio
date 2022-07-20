@@ -58,14 +58,14 @@ function Department() {
 						<article className='team2'>
 							<img src={`${path}/img/mem2.jpg`} alt='' />
 							<p>
-								<span>Abigail</span> <br />
+								<span>Daniel</span> <br />
 								ENGINEER
 							</p>
 						</article>
 						<article className='team3'>
 							<img src={`${path}/img/mem3.jpg`} alt='' />
 							<p>
-								<span>Daniel</span> <br />
+								<span>Abigail</span> <br />
 								DESIGNER
 							</p>
 						</article>

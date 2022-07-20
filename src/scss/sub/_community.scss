@@ -17,7 +17,7 @@
 		.faqArti {
 			display: flex;
 			justify-content: space-between;
-			color: #333;
+			color: #555;
 			width: 100%;
 			width: 1180px;
 			margin: 0 auto;
@@ -34,12 +34,12 @@
 
 				.faqTxt {
 					> h2 {
-						font: 50px/1 'Mukta Malar';
+						font: 50px/1 'Bebas Neue';
 						margin-bottom: 10px;
 					}
 					> h3 {
 						margin-bottom: 20px;
-						font: 19px/1 'Mukta Malar';
+						font: bold 20px/1 'Cormorant SC';
 						border-right: 7px solid rgb(244, 178, 188);
 					}
 					> p {
@@ -107,6 +107,7 @@
 	.showBox {
 		display: flex;
 		justify-content: space-between;
+
 		color: #333;
 		width: 100%;
 		width: 1180px;
@@ -117,15 +118,15 @@
 		> article {
 			width: 280px;
 			height: 350px;
-			display: flex;
-			flex-wrap: wrap;
+			margin-bottom: 20px;
+
 			background: rgb(237, 180, 189);
 			margin-right: 20px;
 			position: relative;
 
-			&:last-of-type {
-				margin-right: 0px;
-			}
+			// &:last-of-type {
+			// 	margin-right: 0px;
+			// }
 			padding: 30px;
 		}
 
@@ -135,6 +136,8 @@
 				resize: none;
 				margin-bottom: 10px;
 				padding: 8px 5px;
+				font: 15px/1 'Mukta Malar';
+				border: 1.5px solid rgb(176, 118, 127);
 			}
 		}
 
