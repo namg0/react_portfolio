@@ -1,184 +1,433 @@
 .Community {
-	.faqH {
-		font: bold 50px/1 'Mukta Malar';
-		text-align: center;
-		margin-bottom: 40px;
-		color: rgb(209, 146, 155);
-	}
-	.FAQ {
-		position: relative;
-		margin: 0 auto;
-		background: #fff;
-		padding: 40px;
-		margin-bottom: 40px;
-		font-family: 'Mukta Malar';
-		align-items: center;
-
-		.faqArti {
-			display: flex;
-			justify-content: space-between;
-			color: #555;
-			width: 100%;
-			width: 1180px;
-			margin: 0 auto;
-			> article {
-				width: 270px;
-				height: 200px;
-				display: inline-block;
-				background: #fff;
-				margin-right: 20px;
-				&:last-of-type {
-					margin-right: 0px;
-				}
-				padding: 10px;
-
-				.faqTxt {
-					> h2 {
-						font: 50px/1 'Bebas Neue';
-						margin-bottom: 10px;
-					}
-					> h3 {
-						margin-bottom: 20px;
-						font: bold 20px/1 'Cormorant SC';
-						border-right: 7px solid rgb(244, 178, 188);
-					}
-					> p {
-						width: 93%;
-						font: 15px/1.2 'Mukta Malar';
-						letter-spacing: 1px;
-						word-break: break-all;
-					}
-				}
-			}
-		}
-	}
-
-	.inputBox {
-		width: 100%;
-		position: relative;
-		margin: 0 auto;
-		padding: 60px;
-
-		> h2 {
-			font: 20px/1 'Mukta Malar';
-			text-align: center;
-			margin-bottom: 5px;
-			color: #333;
-		}
-		> h1 {
+	> .inner {
+		.faqH {
 			font: bold 50px/1 'Mukta Malar';
 			text-align: center;
 			margin-bottom: 40px;
 			color: rgb(209, 146, 155);
 		}
-		input[type='text'],
-		textarea {
-			position: absolute;
-			left: 25%;
-			width: 50%;
-			padding: 8px 10px;
-			border: 1px solid rgb(209, 146, 155);
-			margin-bottom: 20px;
-			resize: none;
+		.FAQ {
+			background: #fff;
+			padding: 40px;
+			margin-bottom: 40px;
+			font-family: 'Mukta Malar';
+			width: 100%;
+			align-items: center;
+
+			> .inner {
+				width: 1180px;
+				margin: 0 auto;
+				position: relative;
+
+				.faqArti {
+					display: flex;
+					justify-content: space-between;
+					color: #555;
+					width: 100%;
+
+					position: relative;
+					> article {
+						width: 270px;
+						height: 200px;
+
+						margin-right: 20px;
+						&:last-of-type {
+							margin-right: 0px;
+						}
+						padding: 10px;
+
+						.faqTxt {
+							> h2 {
+								font: 50px/1 'Bebas Neue';
+								margin-bottom: 10px;
+							}
+							> h3 {
+								margin-bottom: 20px;
+								font: bold 20px/1 'Cormorant SC';
+								border-right: 7px solid rgb(244, 178, 188);
+							}
+							> p {
+								width: 93%;
+								font: 15px/1.2 'Mukta Malar';
+								letter-spacing: 1px;
+								word-break: break-all;
+							}
+						}
+					}
+				}
+			}
 		}
-		textarea {
-			position: absolute;
-			top: 79%;
-			height: 200px;
-		}
-		.btnSet {
-			position: absolute;
-			left: 40%;
-			top: 115%;
-			button {
-				width: 130px;
-				height: 30px;
-				display: inline-block;
-				justify-content: center;
-				border: none;
-				border: 2px solid rgb(244, 178, 188);
-				background: transparent;
-				color: rgb(233, 160, 171);
-				cursor: pointer;
-				margin-right: 20px;
-				margin-top: 120px;
+
+		> .inner {
+			width: 1180px;
+			margin: 0 auto;
+
+			.inputBox {
+				width: 100%;
+				position: relative;
+				margin: 0 auto;
+				padding: 60px;
+
+				> h2 {
+					font: 20px/1 'Mukta Malar';
+					text-align: center;
+					margin-bottom: 5px;
+					color: #333;
+				}
+				> h1 {
+					font: bold 50px/1 'Mukta Malar';
+					text-align: center;
+					margin-bottom: 40px;
+					color: rgb(209, 146, 155);
+				}
+				input[type='text'],
+				textarea {
+					position: absolute;
+					left: 25%;
+					width: 50%;
+					padding: 8px 10px;
+					border: 1px solid rgb(209, 146, 155);
+					margin-bottom: 20px;
+					resize: none;
+				}
+				textarea {
+					position: absolute;
+					top: 79%;
+					height: 200px;
+				}
+				.btnSet {
+					position: absolute;
+					left: 38%;
+					top: 115%;
+					button {
+						width: 130px;
+						height: 30px;
+						display: inline-block;
+						justify-content: center;
+						border: none;
+						border: 2px solid rgb(244, 178, 188);
+						background: transparent;
+						color: rgb(233, 160, 171);
+						cursor: pointer;
+						margin-right: 20px;
+						margin-top: 120px;
+					}
+				}
+			}
+
+			.showBox {
+				display: flex;
+				justify-content: space-between;
+
+				color: #333;
+				width: 100%;
+				width: 1180px;
+				margin: 0 auto;
+				position: relative;
+				margin-top: 250px;
+
+				> article {
+					width: 280px;
+					height: 350px;
+					margin-bottom: 20px;
+
+					background: rgb(237, 180, 189);
+					margin-right: 20px;
+					position: relative;
+					padding: 30px;
+				}
+
+				.editTxt {
+					input[type='text'],
+					textarea {
+						resize: none;
+						margin-bottom: 10px;
+						padding: 8px 5px;
+						font: 15px/1 'Mukta Malar';
+						border: 1.5px solid rgb(176, 118, 127);
+					}
+				}
+
+				.txt {
+					color: #fff;
+					> h2 {
+						font: bold 25px/1 'Mukta Malar';
+						margin-bottom: 25px;
+					}
+					> p {
+						font: 13px/1.2 'Mukta Malar';
+						margin-bottom: 20px;
+						letter-spacing: 1px;
+						word-break: break-all;
+					}
+				}
+
+				.btnSet {
+					display: flex;
+					align-items: center;
+
+					button {
+						position: absolute;
+						background: transparent;
+						margin: 10px;
+						cursor: pointer;
+						border: none;
+						padding: 5px;
+						bottom: 0px;
+
+						font: 11px/1 'arial';
+
+						&:nth-of-type(1) {
+							color: #333;
+							right: 30%;
+						}
+						&:nth-of-type(2) {
+							color: #555;
+							right: 0;
+						}
+					}
+				}
 			}
 		}
 	}
+}
 
-	.showBox {
-		display: flex;
-		justify-content: space-between;
+@media screen and (max-width: $tablet) {
+	.Community {
+		> .inner {
+			.FAQ {
+				> .inner {
+					width: 95%;
 
-		color: #333;
-		width: 100%;
-		width: 1180px;
-		margin: 0 auto;
-		position: relative;
-		margin-top: 250px;
+					.faqArti {
+						flex-wrap: wrap;
 
-		> article {
-			width: 280px;
-			height: 350px;
-			margin-bottom: 20px;
+						> article {
+							width: 400px;
+							height: 220px;
 
-			background: rgb(237, 180, 189);
-			margin-right: 20px;
-			position: relative;
+							margin-right: 20px;
+							&:nth-of-type(2) {
+								margin-right: 0px;
+							}
+							&:last-of-type {
+								margin-right: 0px;
+							}
+							padding: 20px;
 
-			// &:last-of-type {
-			// 	margin-right: 0px;
-			// }
-			padding: 30px;
-		}
-
-		.editTxt {
-			input[type='text'],
-			textarea {
-				resize: none;
-				margin-bottom: 10px;
-				padding: 8px 5px;
-				font: 15px/1 'Mukta Malar';
-				border: 1.5px solid rgb(176, 118, 127);
-			}
-		}
-
-		.txt {
-			color: #fff;
-			> h2 {
-				font: bold 25px/1 'Mukta Malar';
-				margin-bottom: 25px;
-			}
-			> p {
-				font: 13px/1.2 'Mukta Malar';
-				margin-bottom: 20px;
-				letter-spacing: 1px;
-				word-break: break-all;
-			}
-		}
-
-		.btnSet {
-			display: flex;
-			align-items: center;
-
-			button {
-				position: absolute;
-				background: transparent;
-				margin: 10px;
-				cursor: pointer;
-				border: none;
-				padding: 5px;
-				bottom: 0px;
-
-				font: 11px/1 'arial';
-
-				&:nth-of-type(1) {
-					color: #333;
-					right: 30%;
+							.faqTxt {
+								> h2 {
+									font: 50px/1 'Bebas Neue';
+									margin-bottom: 10px;
+								}
+								> h3 {
+									margin-bottom: 20px;
+									font: bold 20px/1 'Cormorant SC';
+									border-right: 7px solid rgb(244, 178, 188);
+								}
+								> p {
+									width: 93%;
+									font: 15px/1.2 'Mukta Malar';
+									letter-spacing: 1px;
+									word-break: break-all;
+								}
+							}
+						}
+					}
 				}
-				&:nth-of-type(2) {
-					color: #555;
-					right: 0;
+			}
+			> .inner {
+				width: 90%;
+
+				.inputBox {
+					width: 100%;
+
+					> h2 {
+					}
+					> h1 {
+					}
+					input[type='text'],
+					textarea {
+						left: 15%;
+						width: 70%;
+					}
+					textarea {
+					}
+					.btnSet {
+						left: 36%;
+
+						button {
+						}
+					}
+				}
+
+				.showBox {
+					width: 100%;
+					flex-wrap: wrap;
+
+					> article {
+					}
+
+					.editTxt {
+						input[type='text'],
+						textarea {
+							padding: 20px;
+							font: 13px/1 'Mukta Malar';
+							border: 1.5px solid rgb(176, 118, 127);
+						}
+						input[type='text'] {
+							height: 30px;
+							width: 100%;
+						}
+						textarea {
+							width: 100%;
+							height: 200px;
+						}
+					}
+
+					.txt {
+						padding: 10px;
+						> h2 {
+						}
+						> p {
+						}
+					}
+
+					.btnSet {
+						button {
+							&:nth-of-type(1) {
+								right: 25%;
+							}
+							&:nth-of-type(2) {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.Community {
+		> .inner {
+			.faqH {
+				font: bold 45px/1 'Mukta Malar';
+			}
+			.FAQ {
+				padding: 20px;
+
+				> .inner {
+					left: 5%;
+					width: 80%;
+
+					.faqArti {
+						> article {
+							width: 300px;
+							height: 170px;
+							padding: 10px;
+							&:nth-of-type(2) {
+								margin-bottom: 20px;
+							}
+
+							.faqTxt {
+								> h2 {
+									font: 30px/1 'Bebas Neue';
+									margin-bottom: 6px;
+								}
+								> h3 {
+									margin-bottom: 15px;
+									font: bold 18px/1 'Cormorant SC';
+									border-right: 7px solid rgb(244, 178, 188);
+								}
+								> p {
+									width: 93%;
+									font: 13px/1.2 'Mukta Malar';
+									letter-spacing: 1px;
+									word-break: break-all;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .inner {
+				width: 100%;
+
+				.inputBox {
+					width: 100%;
+					position: relative;
+					margin: 0 auto;
+					padding: 60px;
+
+					> h2 {
+						margin-bottom: 2px;
+					}
+					> h1 {
+						font: bold 45px/1 'Mukta Malar';
+						margin-bottom: 25px;
+					}
+					input[type='text'],
+					textarea {
+						left: 20%;
+						width: 60%;
+						padding: 10px;
+					}
+					textarea {
+						top: 77%;
+					}
+					.btnSet {
+						left: 30%;
+
+						button {
+							width: 80px;
+						}
+					}
+				}
+
+				.showBox {
+					justify-content: center;
+
+					width: 100%;
+
+					> article {
+						width: 280px;
+						height: 250px;
+
+						margin-right: 0px;
+					}
+
+					.editTxt {
+						input[type='text'],
+						textarea {
+							margin-bottom: 10px;
+							padding: 10px;
+							font: 13px/1 'Mukta Malar';
+						}
+						textarea {
+							height: 120px;
+						}
+					}
+
+					.txt {
+						> h2 {
+							font: bold 25px/1 'Mukta Malar';
+							margin-bottom: 12px;
+						}
+						> p {
+							font: 13px/1.2 'Mukta Malar';
+							margin-bottom: 20px;
+						}
+					}
+
+					.btnSet {
+						button {
+							&:nth-of-type(1) {
+								right: 25%;
+							}
+						}
+					}
 				}
 			}
 		}
