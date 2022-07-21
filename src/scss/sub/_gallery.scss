@@ -48,15 +48,22 @@
 
 		.btnG {
 			position: absolute;
-			width: 25%;
-			top: 6px;
-			background: rgb(244, 178, 188);
+			width: 200px;
+			height: 30px;
+			top: -10px;
+			left: 78%;
+			background: transparent;
+
 			border: none;
 			padding: 6px;
-			color: #fff;
+			color: rgb(244, 178, 188);
 			cursor: pointer;
-			font: bold 16px/1 'Mukta Malar';
+			font: bold 30px/1 'Cormorant SC';
 			letter-spacing: 1px;
+			&:hover {
+				border-bottom: 10px solid #fff;
+				color: rgb(209, 146, 155);
+			}
 		}
 
 		.searchBox {
@@ -77,6 +84,10 @@
 				cursor: pointer;
 				font: bold 13px/1 'Mukta Malar';
 				width: 80px;
+				&:hover {
+					background: rgb(209, 146, 155);
+					color: #fff;
+				}
 			}
 		}
 	}

@@ -43,8 +43,10 @@
 						border-right: 7px solid rgb(244, 178, 188);
 					}
 					> p {
+						width: 93%;
 						font: 15px/1.2 'Mukta Malar';
 						letter-spacing: 1px;
+						word-break: break-all;
 					}
 				}
 			}
@@ -151,6 +153,7 @@
 				font: 13px/1.2 'Mukta Malar';
 				margin-bottom: 20px;
 				letter-spacing: 1px;
+				word-break: break-all;
 			}
 		}
 
