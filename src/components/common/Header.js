@@ -1,8 +1,11 @@
 import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Menu from './Menu';
+import { useRef } from 'react';
 
 function Header(props) {
+	const menu = useRef(null);
 	const active = {
 		fontWeight: 'bold',
 		color: 'rgb(186, 120, 120)',

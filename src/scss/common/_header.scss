@@ -121,3 +121,227 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	header {
+		width: 100%;
+		background: #fff;
+		.inner {
+			width: 1180px;
+			height: 70px;
+			margin: 0 auto;
+			position: relative;
+
+			h1 {
+				position: absolute;
+				bottom: 23px;
+				left: 40px;
+				a {
+					font: bold 25px/1 'El Messiri';
+					letter-spacing: 1.5px;
+					color: rgb(244, 178, 188);
+					float: right;
+				}
+			}
+			#nav {
+				position: absolute;
+				bottom: 40%;
+				right: 25%;
+				li {
+					float: left;
+					margin-right: 50px;
+
+					a {
+						display: inline-block;
+						background: rgba(242, 188, 188, 0);
+						font: 15px/1 'Mukta Malar';
+						color: #555;
+					}
+				}
+			}
+			#util {
+				position: absolute;
+				bottom: 10%;
+				right: 2%;
+				li {
+					float: left;
+					a {
+						display: inline-block;
+						padding: 20px 15px;
+						font: 15px/1 'Mukta Malar';
+						color: #555;
+					}
+				}
+			}
+
+			.fa-bars {
+				font-size: 24px;
+				color: #fff;
+				position: absolute;
+				top: 30;
+				right: 30px;
+				display: none;
+			}
+		}
+		&.main {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+			.inner {
+				h1 a {
+					color: rgb(242, 188, 188);
+				}
+				#nav li {
+					&:hover a {
+						background: rgba(242, 188, 188, 1);
+						height: 10px;
+					}
+				}
+				#nav li a {
+					color: #555;
+				}
+
+				.fa-bars {
+					color: rgb(242, 188, 188);
+				}
+				#util li {
+					&:hover a {
+						color: rgb(200, 132, 132);
+					}
+				}
+				#util li a {
+					color: #555;
+				}
+			}
+		}
+		&.sub {
+			.inner {
+				width: 100%;
+				h1 a {
+				}
+
+				#nav {
+					display: none;
+				}
+
+				.fa-bars {
+					display: block;
+					top: 30%;
+					right: 5%;
+				}
+				#util {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	header {
+		width: 100%;
+		background: #fff;
+		.inner {
+			width: 1180px;
+			height: 70px;
+			margin: 0 auto;
+			position: relative;
+
+			h1 {
+				position: absolute;
+				bottom: 23px;
+				left: 40px;
+				a {
+					font: bold 25px/1 'El Messiri';
+					letter-spacing: 1.5px;
+					color: rgb(244, 178, 188);
+					float: right;
+				}
+			}
+			#nav {
+				position: absolute;
+				bottom: 40%;
+				right: 25%;
+				li {
+					float: left;
+					margin-right: 50px;
+
+					a {
+						display: inline-block;
+						background: rgba(242, 188, 188, 0);
+						font: 15px/1 'Mukta Malar';
+						color: #555;
+					}
+				}
+			}
+			#util {
+				position: absolute;
+				bottom: 10%;
+				right: 2%;
+				li {
+					float: left;
+					a {
+						display: inline-block;
+						padding: 20px 15px;
+						font: 15px/1 'Mukta Malar';
+						color: #555;
+					}
+				}
+			}
+
+			.fa-bars {
+				font-size: 24px;
+				color: #fff;
+				position: absolute;
+				top: 30;
+				right: 30px;
+				display: none;
+			}
+		}
+		&.main {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+			.inner {
+				h1 a {
+					color: rgb(242, 188, 188);
+				}
+				#nav li {
+					&:hover a {
+						background: rgba(242, 188, 188, 1);
+						height: 10px;
+					}
+				}
+				#nav li a {
+					color: #555;
+				}
+
+				.fa-bars {
+					color: rgb(242, 188, 188);
+				}
+				#util li {
+					&:hover a {
+						color: rgb(200, 132, 132);
+					}
+				}
+				#util li a {
+					color: #555;
+				}
+			}
+		}
+		&.sub {
+			.inner {
+				width: 100%;
+				h1 a {
+					font-size: 20px;
+				}
+
+				.fa-bars {
+					right: 8%;
+				}
+			}
+		}
+	}
+}
