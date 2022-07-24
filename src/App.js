@@ -5,8 +5,7 @@ import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 
 //main
-import Visual from './components/main/Visual';
-import Content from './components/main/Content';
+import Main from './components/main/Main';
 
 //sub nav
 import Department from './components/sub/Department';
@@ -27,8 +26,7 @@ function App() {
 				{/* main header */}
 				<Route exact path='/'>
 					<Header type={'main'} />
-					<Visual />
-					<Content />
+					<Main />
 					<Footer type={'main'} />
 				</Route>
 
