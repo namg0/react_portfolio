@@ -1,4 +1,9 @@
 import { Route, Switch } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchYoutube } from './redux/youtubeSlice';
+import { fetchFlickr } from './redux/flickrSlice';
+import { fetchMembers } from './redux/membersSlice';
 
 //common
 import Header from './components/common/Header';
@@ -20,6 +25,13 @@ import Join from './components/sub/Join';
 import './scss/style.scss';
 
 function App() {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(fetchYoutube());
+		dispatch(fetchMembers());
+		dispatch(fetchFlickr({ type: 'interest' }));
+	}, []);
 	return (
 		<>
 			<Switch>
@@ -44,17 +56,6 @@ function App() {
 					<Footer type={'sub'} />
 				</Route>
 			</Switch>
-			{/* nav */}
-			{/* <Route path='/department' component={Department} />
-			<Route path='/gallery' component={Gallery} />
-			<Route path='/youtube' component={Youtube} />
-			<Route path='/community' component={Community} />
-			<Route path='/location' component={Location} />
-			<Route path='/members' component={Members} /> */}
-			{/* util */}
-			{/* <Route path='/login' component={Login} />
-			<Route path='/join' component={Join} /> */}
-			{/* <Footer /> */}
 		</>
 	);
 }

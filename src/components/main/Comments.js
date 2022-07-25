@@ -2,7 +2,7 @@ import React from 'react';
 
 function Comments() {
 	return (
-		<div className='Comments'>
+		<div id='Comments'>
 			<h1>What our customer say.</h1>
 		</div>
 	);

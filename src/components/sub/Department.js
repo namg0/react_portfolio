@@ -1,9 +1,14 @@
 import Layout from '../common/Layout';
+import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+
 function Department() {
 	const path = process.env.PUBLIC_URL;
+	const Members = useSelector((store) => store.members.data);
+	console.log(Members);
+
 	return (
 		<Layout name={'Department'}>
 			<section className='about'>
@@ -19,13 +24,13 @@ function Department() {
 							ipsa quod cum at! <br />
 							<br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							Quas asperiores nisi provident corporis laborum nihil similique in
-							assumenda eos magnam.{' '}
+							assumenda eos magnam.
 							<span>Incidunt consectetur beatae earum!</span> Neque placeat
 							pariatur vero animi? Repellat, placeat! Et.
 						</p>
 					</div>
 					<div className='aboutImg'>
-						<img src={`${path}/img/about us1.jpg`} alt='' />
+						<img src={`${path}/img/aboutUs1.jpg`} />
 					</div>
 				</div>
 			</section>
@@ -40,35 +45,25 @@ function Department() {
 						<FontAwesomeIcon icon={faQuoteRight} />
 					</div>
 					<div className='sloganImg'>
-						<img src={`${path}/img/about us2.jpg`} alt='' />
+						<img src={`${path}/img/aboutUs2.jpg`} />
 					</div>
 				</div>
 			</section>
 			<section className='team'>
 				<div className='inner'>
 					<div className='teamImg'>
-						<article className='team1'>
-							<img src={`${path}/img/mem1.jpg`} alt='' />
-							<p>
-								<span>Olivia</span>
-								<br />
-								CEO
-							</p>
-						</article>
-						<article className='team2'>
-							<img src={`${path}/img/mem2.jpg`} alt='' />
-							<p>
-								<span>Daniel</span> <br />
-								ENGINEER
-							</p>
-						</article>
-						<article className='team3'>
-							<img src={`${path}/img/mem3.jpg`} alt='' />
-							<p>
-								<span>Abigail</span> <br />
-								DESIGNER
-							</p>
-						</article>
+						{Members.map((member, idx) => {
+							return (
+								<article key={idx}>
+									<img src={`${path}/img/${member.pic}`} alt='' />
+									<p>
+										<span>{member.name}</span>
+										<br />
+										{member.position}
+									</p>
+								</article>
+							);
+						})}
 					</div>
 					<div className='teamTxt'>
 						<h1>Our Team.</h1>

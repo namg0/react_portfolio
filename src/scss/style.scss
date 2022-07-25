@@ -10,8 +10,11 @@ $mobile: 460px;
 @import 'common/popup';
 
 //main
-@import 'main/content';
+@import 'main/main';
 @import 'main/visual';
+@import 'main/content';
+@import 'main/vid';
+@import 'main/comments';
 
 //sub
 @import 'sub/community';

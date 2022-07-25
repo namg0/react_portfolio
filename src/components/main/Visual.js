@@ -1,21 +1,26 @@
 function Visual() {
+	const path = process.env.PUBLIC_URL;
 	return (
 		<figure id='visual'>
 			<div className='inner'>
-				<h1>
-					Watch. <br /> Learn. <br /> Grow.
-				</h1>
-				<p>Find your passion</p>
-				<span>Go</span>
+				<div className='visualTxt'>
+					<h1 className='visualH'>
+						Watch. <br /> Learn. <br /> Grow.
+					</h1>
+					<div className='visualP'>
+						<p>Find your passion</p>
+						<span>Go</span>
+					</div>
+				</div>
 				<div className='visualPic'>
-					<div className='viualImg1'>
-						<img src='' alt='' />
+					<div className='visualImg1'>
+						<img src={`${path}/img/visual1.jpg`} alt='' />
 					</div>
-					<div className='viualImg2'>
-						<img src='' alt='' />
+					<div className='visualImg2'>
+						<img src={`${path}/img/visual2.jpg`} alt='' />
 					</div>
-					<div className='viualImg3'>
-						<img src='' alt='' />
+					<div className='visualImg3'>
+						<img src={`${path}/img/visual3.jpg`} alt='' />
 					</div>
 				</div>
 			</div>

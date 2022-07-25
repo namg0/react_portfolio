@@ -1,5 +1,71 @@
-main {
-	width: 1180px;
-	min-height: 500px;
-	margin: 150px auto;
+#Content {
+	margin-top: 100px;
+	color: #444;
+	> .inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+		> h1 {
+			text-align: center;
+			font: bold 40px/1 'Mukta Malar';
+			margin-bottom: 30px;
+		}
+		.contentPic {
+			display: flex;
+			justify-content: space-between;
+			object-fit: cover;
+			.contentImg1 {
+				width: 280px;
+				img {
+					width: 100%;
+					margin-bottom: 8px;
+				}
+				h2 {
+					font: bold 20px/1 'Mukta Malar';
+				}
+				span {
+					font: 15px/1 'Mukta Malar';
+				}
+			}
+			.contentImg2 {
+				width: 280px;
+				img {
+					width: 100%;
+					margin-bottom: 8px;
+				}
+				h2 {
+					font: bold 20px/1 'Mukta Malar';
+				}
+				span {
+					font: 15px/1 'Mukta Malar';
+				}
+			}
+			.contentImg3 {
+				width: 280px;
+				img {
+					width: 100%;
+					margin-bottom: 8px;
+				}
+				h2 {
+					font: bold 20px/1 'Mukta Malar';
+				}
+				span {
+					font: 15px/1 'Mukta Malar';
+				}
+			}
+			.contentImg4 {
+				width: 280px;
+				img {
+					width: 100%;
+					margin-bottom: 8px;
+				}
+				h2 {
+					font: bold 20px/1 'Mukta Malar';
+				}
+				span {
+					font: 15px/1 'Mukta Malar';
+				}
+			}
+		}
+	}
 }
