@@ -3,7 +3,9 @@ function Content() {
 	return (
 		<div id='Content'>
 			<div className='inner'>
-				<h1>Unlimited access to 100+ instructors.</h1>
+				<h1>
+					Unlimited access to 100+ instructors<span>.</span>
+				</h1>
 				<div className='contentPic'>
 					<div className='contentImg1'>
 						<img src={`${path}/img/con1.jpg`} alt='' />

@@ -10,7 +10,8 @@ function vid() {
 			<div className='inner'>
 				<div className='vidH'>
 					<h1>
-						Get the skills you <br /> need for a hobby that <br /> is in demand.
+						Get the skills you <br /> need for a hobby that <br /> is in demand
+						<span>.</span>
 					</h1>
 					<p>
 						The modern labor market dictates its own terms. <br /> Today, to be
@@ -53,7 +54,7 @@ function vid() {
 						</div>
 					</div>
 					<div className='vidVideo'>
-						<video src={`${path}/img/vid.mp4`}></video>
+						<video src={`${path}/img/vid.mp4`} autoPlay loop></video>
 					</div>
 				</div>
 				<div className='vidBox'>

@@ -5,7 +5,8 @@ function Visual() {
 			<div className='inner'>
 				<div className='visualTxt'>
 					<h1 className='visualH'>
-						Watch. <br /> Learn. <br /> Grow.
+						Watch<span>.</span> <br /> Learn<span>.</span> <br /> Grow
+						<span>.</span>
 					</h1>
 					<div className='visualP'>
 						<p>Find your passion</p>

@@ -1,9 +1,57 @@
 #Comments {
-	width: 1180px;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 80px;
-	> h1 {
-		font: bold 30px/1 'arial';
+	#comm {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		perspective: 600px;
+		h1 {
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 40px;
+			font: bold 40px/1 'Mukta Malar';
+			color: #444;
+			span {
+				color: rgb(228, 154, 154);
+				font-size: 45px;
+			}
+		}
+
+		article {
+			width: 200px;
+			height: 270px;
+			border: 1px solid rgb(228, 154, 154);
+			padding: 20px;
+			background: rgb(255, 255, 255);
+			transition-duration: 0.5s;
+			opacity: 1;
+			margin-right: 20px;
+			margin-bottom: 100px;
+			&:last-of-type {
+				margin-right: 0px;
+			}
+
+			h2 {
+				font: bold 20px/1 'Cormorant SC';
+				color: rgb(228, 154, 154);
+				margin-bottom: 15px;
+			}
+			p {
+				font: 14px/1.2 'Mukta Malar';
+				color: #777;
+			}
+			&:hover {
+				background: rgb(244, 178, 188);
+				h2,
+				p {
+					color: #fff;
+				}
+			}
+		}
 	}
 }
