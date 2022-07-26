@@ -14,7 +14,7 @@
 			width: 100%;
 			text-align: center;
 			margin-bottom: 40px;
-			font: bold 40px/1 'Mukta Malar';
+			font: bold 36px/1 'ABeeZee';
 			color: #444;
 			span {
 				color: rgb(228, 154, 154);
@@ -32,6 +32,7 @@
 			opacity: 1;
 			margin-right: 20px;
 			margin-bottom: 100px;
+			box-shadow: 5px 5px 10px rgb(229, 170, 170);
 			&:last-of-type {
 				margin-right: 0px;
 			}
@@ -40,6 +41,7 @@
 				font: bold 20px/1 'Cormorant SC';
 				color: rgb(228, 154, 154);
 				margin-bottom: 15px;
+				letter-spacing: 1px;
 			}
 			p {
 				font: 14px/1.2 'Mukta Malar';

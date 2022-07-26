@@ -1,7 +1,7 @@
 .Community {
 	> .inner {
 		.faqH {
-			font: bold 50px/1 'Mukta Malar';
+			font: bold 50px/1 'ABeeZee';
 			text-align: center;
 			margin-bottom: 40px;
 			color: rgb(209, 146, 155);
@@ -75,7 +75,7 @@
 					color: #333;
 				}
 				> h1 {
-					font: bold 50px/1 'Mukta Malar';
+					font: bold 46px/1 'ABeeZee';
 					text-align: center;
 					margin-bottom: 40px;
 					color: rgb(209, 146, 155);
@@ -118,7 +118,7 @@
 			.showBox {
 				display: flex;
 				justify-content: space-between;
-
+				flex-wrap: wrap;
 				color: #333;
 				width: 100%;
 				width: 1180px;
@@ -127,14 +127,20 @@
 				margin-top: 250px;
 
 				> article {
-					width: 280px;
+					width: 220px;
 					height: 350px;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 
 					background: rgb(237, 180, 189);
-					margin-right: 20px;
+					margin-right: 15px;
 					position: relative;
 					padding: 30px;
+					&:nth-of-type(5) {
+						margin-right: 0px;
+					}
+					&:nth-of-type(10) {
+						margin-right: 0px;
+					}
 				}
 
 				.editTxt {

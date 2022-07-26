@@ -12,8 +12,8 @@
 		.visualTxt {
 			width: 20%;
 			.visualH {
-				font: bold 55px/1 'Mukta Malar';
-				letter-spacing: 2px;
+				font: bold 55px/1.1 'ABeeZee';
+				letter-spacing: 1px;
 				margin-bottom: 50px;
 				span {
 					color: rgb(228, 154, 154);
@@ -36,11 +36,11 @@
 					width: 60px;
 					background: rgb(242, 188, 188);
 					padding: 20px 10px;
-				}
-				&:hover span {
-					color: #fff;
-					font-weight: bold;
-					background: rgb(180, 219, 231);
+					&:hover {
+						color: #fff;
+						font-weight: bold;
+						background: rgb(180, 219, 231);
+					}
 				}
 			}
 		}

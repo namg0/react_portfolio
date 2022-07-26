@@ -9,8 +9,9 @@
 			display: flex;
 			margin-bottom: 10px;
 			> h1 {
-				width: 40%;
-				font: bold 38px/1.3 'Mukta Malar';
+				width: 45%;
+				font: bold 38px/1.3 'ABeeZee';
+				letter-spacing: 1px;
 				span {
 					color: rgb(228, 154, 154);
 					font-size: 40px;
@@ -140,6 +141,7 @@
 			}
 			p {
 				padding: 28px 0px;
+				letter-spacing: 1px;
 				&:nth-of-type(1) {
 					margin-right: 100px;
 					font: bold 13px/1 'Mukta Malar';

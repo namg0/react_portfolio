@@ -8,58 +8,8 @@ function Community() {
 	const textareaEdit = useRef(null);
 
 	const getLocalData = () => {
-		const dummyPosts = [
-			{
-				title: 'Expired period',
-				content:
-					'Sed, architecto asperiores voluptas, dignissimos vitae iste aliquam reprehenderit, magni numquam earum veritatis quo laborum eveniet error.',
-			},
-			{
-				title: 'Simultaneous connection',
-				content:
-					'Quo assumenda eveniet possimus at molestiae perspiciatis soluta, sunt iusto consequatur dicta, aspernatur quam aliquid aliquam natus aut!',
-			},
-			{
-				title: 'Delivery of supplies',
-				content:
-					'Voluptas ratione velit expedita commodi dolor illum corporis sit sint.',
-			},
-			{ title: 'A lecture extension', content: 'Lorem ipsum dolor sit.' },
-			{
-				title: 'Playback error',
-				content: 'Quidem molestiae voluptatibus aliquid cum ipsum harum.',
-			},
-			{
-				title: 'Change authentication device',
-				content: 'Labore esse aperiam voluptates eum laboriosam ea minima',
-			},
-			{
-				title: 'An intermediate refund',
-				content:
-					'Sit neque aperiam nobis temporibus nam voluptate autem aspernatur accusantium sequi odio',
-			},
-			{
-				title: 'Submission of assignment',
-				content: 'Adipisci labore a. Ut, provident officia.',
-			},
-			{
-				title: 'Subtitle error',
-				content:
-					'Autem aspernatur accusantium sequi odio praesentium molestiae ipsum et.',
-			},
-			{
-				title: 'Annual membership',
-				content: 'Id voluptate illo ad dolor expedita sint dolores.',
-			},
-		];
-
 		const data = localStorage.getItem('post');
-
-		if (data) {
-			return JSON.parse(data);
-		} else {
-			return dummyPosts;
-		}
+		return JSON.parse(data);
 	};
 
 	const [Posts, setPosts] = useState(getLocalData());
@@ -80,8 +30,8 @@ function Community() {
 			return alert('제목과 본문을 모두 입력하세요');
 		}
 		setPosts([
-			...Posts,
 			{ title: input.current.value, content: textarea.current.value },
+			...Posts,
 		]);
 		resetForm();
 	};
@@ -114,7 +64,7 @@ function Community() {
 	const updatePost = (index) => {
 		if (!inputEdit.current.value.trim() || !textareaEdit.current.value.trim()) {
 			resetForm();
-			return alert('수정할 제목과 본문을 모두 입력하세요');
+			return alert('수정할 제목과 본문을  모두 입력하세요');
 		}
 		setPosts(
 			Posts.map((post, idx) => {
@@ -129,8 +79,6 @@ function Community() {
 	};
 
 	useEffect(() => {
-		console.log(Posts);
-
 		localStorage.setItem('post', JSON.stringify(Posts));
 	}, [Posts]);
 

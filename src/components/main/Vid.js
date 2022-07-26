@@ -54,7 +54,7 @@ function vid() {
 						</div>
 					</div>
 					<div className='vidVideo'>
-						<video src={`${path}/img/vid.mp4`} autoPlay loop></video>
+						<video src={`${path}/img/vid.mp4`} autoPlay loop muted></video>
 					</div>
 				</div>
 				<div className='vidBox'>
