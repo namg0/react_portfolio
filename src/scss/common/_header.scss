@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	background: #fff;
+	background: transparent;
 	.inner {
 		width: 1180px;
 		height: 70px;
@@ -65,11 +65,11 @@ header {
 		z-index: 2;
 		.inner {
 			h1 a {
-				color: rgb(242, 188, 188);
+				color: #fff;
 			}
 			#nav li {
 				&:hover a {
-					background: rgba(242, 188, 188, 1);
+					background: #fff;
 					height: 10px;
 				}
 			}
@@ -82,7 +82,7 @@ header {
 			}
 			#util li {
 				&:hover a {
-					color: rgb(200, 132, 132);
+					color: #fff;
 				}
 			}
 			#util li a {

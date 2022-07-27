@@ -1,7 +1,24 @@
+import { NavLink } from 'react-router-dom';
 function Visual() {
 	const path = process.env.PUBLIC_URL;
 	return (
 		<figure id='visual'>
+			<div className='fsVid'>
+				<h1>
+					DO YOU WANT TO <br /> FIND A HOBBY?
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas
+					numquam quibusdam dolor harum non necessitatibus ducimus tenetur
+					consequatur earum. Aperiam necessitatibus sequi porro animi quis
+					dolore!
+				</p>
+				<h3>
+					<NavLink to='/youtube'>View More</NavLink>
+				</h3>
+
+				<video src={`${path}/img/fsVid.mp4`} autoPlay loop muted></video>
+			</div>
 			<div className='inner'>
 				<div className='visualTxt'>
 					<h1 className='visualH'>
