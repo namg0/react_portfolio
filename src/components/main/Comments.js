@@ -62,7 +62,7 @@ function Comments() {
 	}, []);
 
 	return (
-		<div id='Comments'>
+		<div id='Comments' className='myScroll'>
 			<section id='comm' className='myScroll'>
 				<h1>
 					What our customer say<span>.</span>

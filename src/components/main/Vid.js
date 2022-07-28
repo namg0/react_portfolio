@@ -6,7 +6,7 @@ import { faGem } from '@fortawesome/free-solid-svg-icons';
 function vid() {
 	const path = process.env.PUBLIC_URL;
 	return (
-		<div className='Vid'>
+		<div id='Vid' className='myScroll'>
 			<div className='inner'>
 				<div className='vidH'>
 					<h1>
