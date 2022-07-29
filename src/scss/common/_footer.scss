@@ -355,6 +355,46 @@ footer {
 			height: 1px;
 			background: #eee;
 		}
+		&.main {
+			.inner {
+				width: 100%;
+
+				h1 {
+				}
+				.icons {
+				}
+				.navF {
+					top: 43%;
+					left: 3.5%;
+
+					a {
+					}
+				}
+				.subscribe {
+					h2 {
+					}
+					input {
+					}
+					li {
+						span {
+						}
+						&:hover span {
+						}
+					}
+				}
+
+				p {
+					position: absolute;
+					width: 100%;
+					bottom: 0%;
+					display: flex;
+					text-align: center;
+					font: 10px/1 'arial';
+					color: #fff;
+					letter-spacing: 2px;
+				}
+			}
+		}
 		&.sub {
 			.inner {
 				width: 100%;
@@ -392,6 +432,83 @@ footer {
 					font: 10px/1 'arial';
 					color: rgb(217, 183, 183);
 					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 834px) {
+	footer {
+		&.main {
+			height: 200px;
+			.inner {
+				width: 100%;
+
+				h1 {
+					font: bold 20px/1 'El Messiri';
+
+					left: 30px;
+				}
+				.icons {
+					top: 15%;
+					left: 30px;
+					font-size: 20px;
+					margin-top: 15px;
+				}
+				.navF {
+					top: 43%;
+					left: 7%;
+
+					a {
+						padding: 7px;
+						font-size: 13px;
+					}
+				}
+				.subscribe {
+					display: none;
+				}
+
+				p {
+					left: 21%;
+
+					font-size: 5px;
+				}
+			}
+		}
+		&.sub {
+			height: 200px;
+			.inner {
+				width: 100%;
+
+				h1 {
+					font: bold 20px/1 'El Messiri';
+
+					left: 30px;
+				}
+				.icons {
+					top: 15%;
+					left: 30px;
+					font-size: 20px;
+					margin-top: 15px;
+				}
+				.navF {
+					top: 43%;
+					left: 7%;
+
+					a {
+						padding: 7px;
+						font-size: 13px;
+					}
+				}
+				.subscribe {
+					display: none;
+				}
+
+				p {
+					left: 21%;
+
+					font-size: 5px;
 				}
 			}
 		}
@@ -522,6 +639,42 @@ footer {
 			width: 100%;
 			height: 1px;
 			background: #eee;
+		}
+		&.main {
+			height: 200px;
+			.inner {
+				width: 100%;
+
+				h1 {
+					font: bold 20px/1 'El Messiri';
+
+					left: 30px;
+				}
+				.icons {
+					top: 15%;
+					left: 30px;
+					font-size: 20px;
+					margin-top: 15px;
+				}
+				.navF {
+					top: 43%;
+					left: 7%;
+
+					a {
+						padding: 7px;
+						font-size: 13px;
+					}
+				}
+				.subscribe {
+					display: none;
+				}
+
+				p {
+					left: 21%;
+
+					font-size: 5px;
+				}
+			}
 		}
 		&.sub {
 			height: 200px;

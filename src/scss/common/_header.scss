@@ -56,6 +56,7 @@ header {
 			top: 30;
 			right: 30px;
 			display: none;
+			cursor: pointer;
 		}
 	}
 	&.main {
@@ -78,7 +79,7 @@ header {
 			}
 
 			.fa-bars {
-				color: rgb(242, 188, 188);
+				color: #fff;
 			}
 			#util li {
 				&:hover a {
@@ -117,6 +118,27 @@ header {
 				&:hover a {
 					color: rgb(255, 255, 255);
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	header {
+		width: 100%;
+		> .inner {
+			width: 100%;
+			#nav {
+				display: none;
+			}
+			#util {
+				display: none;
+			}
+			.fa-bars {
+				display: block;
+				position: absolute;
+				top: 30%;
+				right: 5%;
 			}
 		}
 	}

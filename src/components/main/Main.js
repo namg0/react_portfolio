@@ -1,14 +1,13 @@
-import Visual from './Visual';
+import Header from '../common/Header';
+import Comments from './Comments';
 import Content from './Content';
 import Vid from './Vid';
-import Comments from './Comments';
-import { useEffect, useRef } from 'react';
+import Visual from './Visual';
 
 function Main() {
-	const main = useRef(null);
-
 	return (
-		<main ref={main}>
+		<main>
+			<Header type={'main'} />
 			<Visual></Visual>
 			<Content></Content>
 			<Vid></Vid>
@@ -16,5 +15,4 @@ function Main() {
 		</main>
 	);
 }
-
 export default Main;

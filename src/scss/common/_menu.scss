@@ -1,0 +1,55 @@
+#mobileGnb {
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 10;
+	padding: 80px;
+
+	h1 {
+		width: 100%;
+		letter-spacing: 1px;
+		position: absolute;
+		bottom: 8%;
+
+		a {
+			font: bold 27px/1 'El Messiri';
+			color: rgb(244, 178, 188);
+		}
+	}
+
+	h2 {
+		position: absolute;
+		right: 10%;
+		top: 3%;
+		letter-spacing: 1px;
+		a {
+			font: 15px/1 'Mukta Malar';
+			color: rgb(244, 178, 188);
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+
+	ul {
+		margin-top: 80px;
+	}
+
+	ul li a {
+		display: block;
+		height: 50px;
+		margin-bottom: 30px;
+
+		font: 20px/50px 'Mukta Malar';
+		color: rgb(244, 178, 188);
+		text-align: center;
+		&:hover {
+			background: rgba(244, 178, 188, 0.5);
+			color: #fff;
+			font-weight: bold;
+		}
+	}
+}

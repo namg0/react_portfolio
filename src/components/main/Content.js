@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Content() {
 	const path = process.env.PUBLIC_URL;
+
 	return (
 		<div id='Content' className='myScroll'>
 			<div className='inner'>
