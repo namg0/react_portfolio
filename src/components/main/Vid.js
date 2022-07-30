@@ -10,7 +10,9 @@ function vid() {
 			<div className='inner'>
 				<div className='vidH'>
 					<h1>
-						Get the skills you <br /> need for a hobby that <br /> is in demand
+						Get the skills you <br />
+						need for a hobby that <br />
+						is in demand
 						<span>.</span>
 					</h1>
 					<p>

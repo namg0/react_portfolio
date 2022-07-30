@@ -168,3 +168,517 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	#Vid {
+		margin-top: 50px;
+		> .inner {
+			width: 100%;
+			padding: 50px;
+			.vidH {
+				margin-bottom: 5px;
+				> h1 {
+					width: 50%;
+					font: bold 35px/1.3 'ABeeZee';
+					span {
+					}
+				}
+				p {
+					margin-left: 180px;
+					width: 48%;
+					font: 18px/1.5 'Mukta Malar';
+				}
+			}
+			.vidContents {
+				width: 100%;
+				&::before {
+					height: 50px;
+					top: 59.5%;
+					left: 2.2%;
+				}
+				.vidText {
+					width: 35%;
+					margin-top: 50px;
+					.vidTxt1 {
+						margin-bottom: 32px;
+						.fa-users {
+						}
+						.vidTxtG {
+							margin-top: 11px;
+							margin-left: 15px;
+							h2 {
+								font: bold 27px/1 'Cormorant SC';
+								margin-bottom: 10px;
+							}
+							p {
+								font: 15px/1.2 'Mukta Mala';
+							}
+						}
+					}
+					.vidTxt2 {
+						margin-bottom: 40px;
+						.fa-medal {
+						}
+						.vidTxtG {
+							margin-left: 15px;
+							h2 {
+								font: bold 27px/1 'Cormorant SC';
+								margin-bottom: 10px;
+							}
+							p {
+								font: 15px/1.2 'Mukta Mala';
+							}
+						}
+					}
+					.vidTxt3 {
+						.fa-gem {
+						}
+						.vidTxtG {
+							margin-left: 15px;
+							h2 {
+								font: bold 27px/1 'Cormorant SC';
+								margin-bottom: 10px;
+							}
+							p {
+								font: 15px/1.2 'Mukta Mala';
+							}
+						}
+					}
+				}
+				&::after {
+					height: 50px;
+					top: 31%;
+					left: 2.2%;
+				}
+				.vidVideo {
+					margin-left: 150px;
+					width: 70%;
+					margin-top: 25px;
+					video {
+						width: 90%;
+						height: 370px;
+					}
+				}
+			}
+			.vidBox {
+				width: 30%;
+				height: 10%;
+				right: 12%;
+				top: 30%;
+
+				h2 {
+					font: bold 50px/1.1 'Mukta Malar';
+					margin-right: 15px;
+				}
+				p {
+					padding: 20px 0px;
+					&:nth-of-type(1) {
+						margin-right: 30px;
+						font: bold 10px/1 'Mukta Malar';
+					}
+					&:nth-of-type(2) {
+						font: bold 10px/1 'Mukta Malar';
+					}
+				}
+				h3 {
+					font: bold 50px/1.1 'Mukta Malar';
+					margin-right: 15px;
+				}
+			}
+			&::after {
+				width: 2px;
+				height: 30px;
+				top: 32%;
+				right: 27.2%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	#Vid {
+		margin-top: 30px;
+		> .inner {
+			width: 100%;
+			padding: 50px;
+			.vidH {
+				margin-bottom: 0px;
+				> h1 {
+					width: 60%;
+					font: bold 30px/1.3 'ABeeZee';
+					span {
+					}
+				}
+				p {
+					margin-left: 100px;
+					width: 50%;
+					font: 15px/1.5 'Mukta Malar';
+				}
+			}
+			.vidContents {
+				&::before {
+					height: 40px;
+					top: 60%;
+					left: 2.5%;
+				}
+				.vidText {
+					margin-top: 35px;
+					width: 30%;
+					.vidTxt1 {
+						.fa-users {
+						}
+						.vidTxtG {
+							margin-top: 16px;
+							margin-left: 15px;
+							h2 {
+								font: bold 24px/1 'Cormorant SC';
+								margin-bottom: 5px;
+							}
+							p {
+								font: 13px/1.2 'Mukta Mala';
+							}
+						}
+					}
+					.vidTxt2 {
+						margin-bottom: 40px;
+						.fa-medal {
+						}
+						.vidTxtG {
+							margin-top: 15px;
+							h2 {
+								font: bold 24px/1 'Cormorant SC';
+								margin-bottom: 5px;
+							}
+							p {
+								font: 13px/1.2 'Mukta Mala';
+							}
+						}
+					}
+					.vidTxt3 {
+						.fa-gem {
+						}
+						.vidTxtG {
+							margin-top: 12px;
+							h2 {
+								font: bold 24px/1 'Cormorant SC';
+								margin-bottom: 5px;
+							}
+							p {
+								font: 13px/1.2 'Mukta Mala';
+							}
+						}
+					}
+				}
+				&::after {
+					height: 40px;
+					top: 30%;
+					left: 2.5%;
+				}
+				.vidVideo {
+					margin-left: 150px;
+					width: 70%;
+					margin-top: 25px;
+					video {
+						width: 100%;
+						height: 340px;
+					}
+				}
+			}
+			.vidBox {
+				width: 30%;
+				height: 10%;
+				right: 10%;
+				top: 30%;
+
+				h2 {
+					font: bold 35px/1.5 'Mukta Malar';
+				}
+				p {
+					padding: 20px 0px;
+					&:nth-of-type(1) {
+						font: bold 5px/1 'Mukta Malar';
+					}
+					&:nth-of-type(2) {
+						font: bold 5px/1 'Mukta Malar';
+					}
+				}
+				h3 {
+					font: bold 35px/1.5 'Mukta Malar';
+				}
+			}
+			&::after {
+				top: 32.5%;
+				right: 24.8%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 840px) {
+	#Vid {
+		margin-top: 0px;
+		> .inner {
+			padding: 30px;
+			margin: 0 auto;
+			.vidH {
+				margin-bottom: 0px;
+				display: block;
+				text-align: center;
+				> h1 {
+					width: 100%;
+					font: bold 25px/1.3 'ABeeZee';
+					span {
+						font-size: 25px;
+					}
+				}
+				p {
+					margin-top: 10px;
+					margin-left: 0px;
+					width: 100%;
+					font: 12px/1.5 'Mukta Malar';
+				}
+			}
+			.vidContents {
+				margin: 0 auto;
+				&::before {
+					width: 270px;
+					height: 1.3px;
+					top: 105%;
+					left: 31%;
+				}
+				.vidText {
+					position: absolute;
+					bottom: -17%;
+					margin-top: 10px;
+					left: 20%;
+
+					width: 100%;
+
+					.vidTxt1 {
+						margin-bottom: 10px;
+						.fa-users {
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 25px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 12px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+					.vidTxt2 {
+						margin-bottom: 10px;
+						.fa-medal {
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 25px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 12px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+					.vidTxt3 {
+						.fa-gem {
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 25px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 12px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+				}
+				&::after {
+					width: 270px;
+					height: 1.3px;
+					top: 90%;
+					left: 31%;
+				}
+				.vidVideo {
+					margin-left: 30px;
+					width: 100%;
+					margin-bottom: 150px;
+					video {
+						width: 95%;
+						height: 340px;
+					}
+				}
+			}
+			.vidBox {
+				width: 27%;
+				height: 8%;
+				right: 5%;
+				top: 35%;
+
+				h2 {
+					display: none;
+				}
+				p {
+					padding: 20px 0px;
+					&:nth-of-type(1) {
+						display: none;
+					}
+					&:nth-of-type(2) {
+						font: bold 5px/1 'Mukta Malar';
+					}
+				}
+				h3 {
+					font: bold 35px/1.5 'Mukta Malar';
+				}
+			}
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#Vid {
+		> .inner {
+			.vidH {
+				> h1 {
+					span {
+					}
+				}
+				p {
+				}
+			}
+			.vidContents {
+				&::before {
+					width: 250px;
+					height: 1.3px;
+					top: 104%;
+					left: 26%;
+				}
+				.vidText {
+					bottom: -40%;
+					margin-top: 10px;
+					left: 10%;
+
+					.vidTxt1 {
+						margin-bottom: 0px;
+						.fa-users {
+							font-size: 15px;
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 20px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 10px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+					.vidTxt2 {
+						margin-bottom: 0px;
+						.fa-medal {
+							font-size: 15px;
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 20px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 10px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+					.vidTxt3 {
+						.fa-gem {
+							font-size: 15px;
+						}
+						.vidTxtG {
+							display: flex;
+							margin-bottom: 10px;
+							margin-left: 15px;
+							h2 {
+								font: bold 20px/1 'Cormorant SC';
+								margin-top: 10px;
+								margin-right: 15px;
+							}
+							p {
+								font: 10px/1.2 'Mukta Mala';
+								margin-top: 8px;
+							}
+						}
+					}
+				}
+				&::after {
+					width: 250px;
+					height: 1.3px;
+					top: 122%;
+					left: 26%;
+				}
+				.vidVideo {
+					margin-left: 30px;
+					width: 100%;
+					margin-bottom: 50px;
+					video {
+						width: 90%;
+						height: 230px;
+					}
+				}
+			}
+			.vidBox {
+				width: 25%;
+				height: 7%;
+				right: 5%;
+				top: 38%;
+
+				h2 {
+				}
+				p {
+					padding: 13px 0px;
+					margin-right: 5px;
+					&:nth-of-type(1) {
+					}
+					&:nth-of-type(2) {
+						font: bold 5px/1 'Mukta Malar';
+					}
+				}
+				h3 {
+					font: bold 25px/1.7 'Mukta Malar';
+					margin-left: 5px;
+				}
+			}
+			&::after {
+			}
+		}
+	}
+}

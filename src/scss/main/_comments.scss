@@ -57,3 +57,111 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	#Comments {
+		#comm {
+			width: 100%;
+
+			h1 {
+				margin-bottom: 40px;
+				font: bold 33px/1 'ABeeZee';
+
+				span {
+				}
+			}
+
+			article {
+				width: 280px;
+				height: 250px;
+				margin-right: 20px;
+				margin-bottom: 50px;
+				&:last-of-type {
+				}
+				h2 {
+				}
+				p {
+				}
+				&:hover {
+					h2,
+					p {
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 670px) {
+	#Comments {
+		#comm {
+			padding: 0px 30px;
+
+			h1 {
+				font: bold 25px/1 'ABeeZee';
+				margin-bottom: 30px;
+
+				span {
+					font-size: 25px;
+				}
+			}
+
+			article {
+				width: 300px;
+				height: 250px;
+				margin-right: 0px;
+				margin-bottom: 20px;
+				padding: 30px;
+				&:last-of-type {
+				}
+				h2 {
+					font: bold 23px/1 'Cormorant SC';
+				}
+				p {
+					font: 16px/1.2 'Mukta Malar';
+				}
+				&:hover {
+					h2,
+					p {
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#Comments {
+		#comm {
+			padding: 0px 30px;
+			margin-top: 150px;
+
+			h1 {
+				span {
+				}
+			}
+
+			article {
+				width: 330px;
+				height: 200px;
+				margin-right: 0px;
+				margin-bottom: 20px;
+				padding: 30px;
+				text-align: center;
+				&:last-of-type {
+				}
+				h2 {
+					font: bold 23px/1 'Cormorant SC';
+				}
+				p {
+					font: 16px/1.2 'Mukta Malar';
+				}
+				&:hover {
+					h2,
+					p {
+					}
+				}
+			}
+		}
+	}
+}
