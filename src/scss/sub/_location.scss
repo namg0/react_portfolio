@@ -132,3 +132,252 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	.Location {
+		.contactUs {
+			> .inner {
+				width: 100%;
+
+				h1 {
+					font: bold 45px/1 'ABeeZee';
+				}
+				p {
+					font: 17px/1.3 'Mukta Malar';
+				}
+				.icon {
+					width: 95%;
+					margin-left: 2.5%;
+
+					> article {
+						padding: 30px 30px;
+
+						> h2 {
+							font-size: 20px;
+						}
+						> p {
+							font-size: 13px;
+						}
+						.fa-location-dot,
+						.fa-phone,
+						.fa-envelope {
+							font-size: 25px;
+						}
+					}
+				}
+			}
+		}
+
+		#map {
+			width: 95%;
+		}
+
+		.booking {
+			> .inner {
+			}
+
+			&::before {
+				top: 72%;
+			}
+			h1 {
+				font: bold 45px/1 'Cormorant SC';
+			}
+			a {
+				&:hover {
+				}
+			}
+		}
+
+		.locaB {
+			margin-top: 200px;
+			width: 100%;
+			.qna {
+				width: 100%;
+				> .inner {
+					width: 100%;
+					.qnaA,
+					.qnaH {
+					}
+					a {
+						&:hover {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 655px) {
+	.Location {
+		.contactUs {
+			> .inner {
+				h1 {
+					font: bold 30px/1 'ABeeZee';
+				}
+				p {
+					font: 13px/1.3 'Mukta Malar';
+				}
+				.icon {
+					width: 90%;
+					margin-left: 5%;
+
+					> article {
+						> h2 {
+							font-size: 16px;
+						}
+						> p {
+							font-size: 11px;
+						}
+						.fa-location-dot,
+						.fa-phone,
+						.fa-envelope {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		#map {
+			width: 90%;
+			height: 350px;
+		}
+
+		.booking {
+			> .inner {
+				margin-top: 110px;
+			}
+
+			&::before {
+				top: 69%;
+				height: 200px;
+			}
+			h1 {
+				font: bold 25px/1 'Cormorant SC';
+			}
+			a {
+				left: 50%;
+				transform: translateX(-50%);
+				top: 150%;
+				width: 120px;
+				font: bold 13px/1 'Mukta Malar';
+				&:hover {
+				}
+			}
+		}
+
+		.locaB {
+			margin-top: 150px;
+			.qna {
+				> .inner {
+					padding: 10px 50px;
+					.qnaA,
+					.qnaH {
+						font: bold 15px/1 'Cormorant SC';
+					}
+					a {
+						font: bold 13px/1 'Mukta Malar';
+						&:hover {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.Location {
+		.contactUs {
+			> .inner {
+				h1 {
+					font: bold 25px/1 'ABeeZee';
+				}
+				p {
+					font: 10px/1.3 'Mukta Malar';
+				}
+				.icon {
+					display: block;
+					width: 100%;
+					margin-left: 13%;
+
+					> article {
+						width: 73%;
+						height: 100px;
+						display: flex;
+						margin-bottom: 10px;
+						padding: 15px 20px;
+						> h2 {
+							font-size: 14px;
+							margin-left: 20px;
+							margin-top: 8%;
+						}
+						&:nth-of-type(1) h2 {
+							margin-top: 5%;
+						}
+						> p {
+							font-size: 12px;
+							margin-top: 8%;
+							margin-left: 25px;
+						}
+						&:nth-of-type(1) p {
+							margin-top: 6%;
+						}
+						.fa-location-dot,
+						.fa-phone,
+						.fa-envelope {
+							font-size: 20px;
+							margin-top: 8%;
+						}
+					}
+				}
+			}
+		}
+
+		#map {
+			margin-top: 40px;
+			width: 90%;
+			height: 300px;
+		}
+
+		.booking {
+			> .inner {
+				margin-top: 80px;
+			}
+
+			&::before {
+				top: 76%;
+				height: 140px;
+			}
+			h1 {
+				font: bold 18px/1 'Cormorant SC';
+			}
+			a {
+				top: 170%;
+				width: 80px;
+				font: bold 11px/1 'Mukta Malar';
+				&:hover {
+				}
+			}
+		}
+
+		.locaB {
+			margin-top: 110px;
+			.qna {
+				> .inner {
+					padding: 10px 30px;
+					.qnaA,
+					.qnaH {
+						font: bold 12px/1 'Cormorant SC';
+					}
+					a {
+						font: bold 10px/1 'Mukta Malar';
+						&:hover {
+						}
+					}
+				}
+			}
+		}
+	}
+}
