@@ -63,10 +63,11 @@ function Comments() {
 
 	return (
 		<div id='Comments' className='myScroll'>
-			<section id='comm' className='myScroll'>
+			<section id='comm'>
 				<h1>
 					What our customer say<span>.</span>
 				</h1>
+
 				{Posts.map((post, idx) => {
 					if (idx >= 5) return;
 					return (

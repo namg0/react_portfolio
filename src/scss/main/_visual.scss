@@ -26,7 +26,7 @@
 			color: #fff;
 			z-index: 1;
 			width: 100%;
-			bottom: 45%;
+			bottom: 25%;
 			left: 5%;
 			p {
 				width: 35%;
@@ -60,140 +60,6 @@
 			object-fit: cover;
 		}
 	}
-	> .inner {
-		width: 1180px;
-		position: relative;
-		margin: 0 auto;
-		display: flex;
-
-		.visualTxt {
-			width: 20%;
-
-			.visualH {
-				font: bold 55px/1.1 'ABeeZee';
-				letter-spacing: 1px;
-				margin-bottom: 50px;
-				span {
-					color: rgb(228, 154, 154);
-				}
-			}
-			.visualP {
-				font: 20px/1 'Mukta Malar';
-				letter-spacing: 1px;
-				display: flex;
-				text-align: center;
-				height: 60px;
-				position: absolute;
-
-				p {
-					width: 210px;
-					background: #fff;
-					padding: 20px 10px;
-				}
-				span {
-					width: 60px;
-					background: rgb(242, 188, 188);
-					padding: 20px 10px;
-					a {
-						color: #444;
-					}
-					&:hover {
-						font-weight: bold;
-						background: rgb(180, 219, 231);
-						a {
-							color: #fff;
-						}
-					}
-				}
-			}
-		}
-		.visualPic {
-			width: 80%;
-
-			display: flex;
-			justify-content: space-between;
-
-			.visualImg1 {
-				width: 25%;
-				flex-grow: 1;
-				margin-right: 15px;
-				transition: 0.3s;
-
-				img {
-					width: 100%;
-					height: 320px;
-				}
-				h1 {
-					position: absolute;
-					text-align: center;
-					font: bold 40px/1.1 'El Messiri';
-					top: 65%;
-					left: 27%;
-					color: #fff;
-					opacity: 0;
-					transition: 0.3s;
-				}
-				&:hover {
-					flex-grow: 3;
-					h1 {
-						opacity: 1;
-					}
-				}
-			}
-			.visualImg2 {
-				width: 25%;
-				flex-grow: 1;
-				margin-right: 15px;
-				transition: 0.3s;
-				img {
-					width: 100%;
-					height: 320px;
-				}
-				h1 {
-					position: absolute;
-					text-align: center;
-					font: bold 40px/1.1 'El Messiri';
-					top: 65%;
-					left: 51%;
-					color: #fff;
-					opacity: 0;
-					transition: 0.3s;
-				}
-				&:hover {
-					flex-grow: 3;
-					h1 {
-						opacity: 1;
-					}
-				}
-			}
-			.visualImg3 {
-				width: 25%;
-				flex-grow: 1;
-				transition: 0.3s;
-				img {
-					width: 100%;
-					height: 320px;
-				}
-				h1 {
-					position: absolute;
-					text-align: center;
-					font: bold 40px/1.1 'El Messiri';
-					top: 65%;
-					left: 76%;
-					color: #fff;
-					opacity: 0;
-					transition: 0.3s;
-				}
-
-				&:hover {
-					flex-grow: 3;
-					h1 {
-						opacity: 1;
-					}
-				}
-			}
-		}
-	}
 }
 
 @media screen and (max-width: $tablet) {
@@ -204,62 +70,10 @@
 				font: bold 5.5em/1.5 'Raleway';
 			}
 			.fsVidT {
+				bottom: 25%;
 			}
 
 			video {
-			}
-		}
-		> .inner {
-			width: 100%;
-			padding: 50px;
-
-			.visualTxt {
-				.visualH {
-					font: bold 45px/1.1 'ABeeZee';
-				}
-				.visualP {
-					margin-left: 20px;
-					font: 15px/1 'Mukta Malar';
-					height: 40px;
-					z-index: 2;
-					p {
-						width: 160px;
-						padding: 13px 10px;
-					}
-					span {
-						width: 50px;
-						padding: 13px 10px;
-					}
-				}
-			}
-			.visualPic {
-				.visualImg1 {
-					img {
-					}
-					h1 {
-						width: 100%;
-						font: bold 30px/1.1 'El Messiri';
-						left: -13%;
-					}
-				}
-				.visualImg2 {
-					img {
-					}
-					h1 {
-						width: 100%;
-						font: bold 30px/1.1 'El Messiri';
-						left: 9%;
-					}
-				}
-				.visualImg3 {
-					img {
-					}
-					h1 {
-						width: 100%;
-						font: bold 30px/1.1 'El Messiri';
-						left: 32%;
-					}
-				}
 			}
 		}
 	}
@@ -278,12 +92,13 @@
 				text-shadow: 5px 5px 10px rgb(202, 70, 90);
 			}
 			.fsVidT {
-				bottom: 50%;
+				bottom: 30%;
 				left: 11%;
 				p {
-					width: 80%;
-					font: 1em/1.2 'ABeeZee';
+					width: 70%;
+					font: 0.8em/1.2 'ABeeZee';
 					margin-bottom: 50px;
+					margin-left: 60px;
 				}
 				h3 {
 					border: 2px solid #fff;
@@ -292,49 +107,6 @@
 			}
 
 			video {
-			}
-		}
-		> .inner {
-			width: 100%;
-			padding: 50px;
-
-			.visualTxt {
-				.visualH {
-					font: bold 40px/1.1 'ABeeZee';
-				}
-				.visualP {
-					height: 45px;
-					z-index: 1;
-					p {
-						padding: 15px 10px;
-					}
-					span {
-						padding: 15px 10px;
-					}
-				}
-			}
-			.visualPic {
-				.visualImg1 {
-					img {
-					}
-					h1 {
-						top: 68%;
-					}
-				}
-				.visualImg2 {
-					img {
-					}
-					h1 {
-						top: 68%;
-					}
-				}
-				.visualImg3 {
-					img {
-					}
-					h1 {
-						top: 68%;
-					}
-				}
 			}
 		}
 	}
@@ -350,7 +122,7 @@
 				font: bold 4em/1.3 'Raleway';
 			}
 			.fsVidT {
-				bottom: 55%;
+				bottom: 40%;
 				left: 11%;
 				p {
 					display: none;
@@ -360,48 +132,6 @@
 			}
 
 			video {
-			}
-		}
-		> .inner {
-			display: block;
-			.visualTxt {
-				.visualH {
-					font: bold 40px/1.1 'ABeeZee';
-					margin-bottom: 30px;
-				}
-				.visualP {
-					display: none;
-				}
-			}
-			.visualPic {
-				width: 100%;
-				.visualImg1 {
-					img {
-						height: 280px;
-					}
-					h1 {
-						left: -27%;
-						top: 75%;
-					}
-				}
-				.visualImg2 {
-					img {
-						height: 280px;
-					}
-					h1 {
-						left: 0%;
-						top: 75%;
-					}
-				}
-				.visualImg3 {
-					img {
-						height: 280px;
-					}
-					h1 {
-						left: 28%;
-						top: 75%;
-					}
-				}
 			}
 		}
 	}
@@ -414,7 +144,7 @@
 				top: 6%;
 			}
 			.fsVidT {
-				bottom: 65%;
+				bottom: 35%;
 				p {
 				}
 				h3 {
@@ -422,54 +152,6 @@
 			}
 
 			video {
-			}
-		}
-		> .inner {
-			display: block;
-			.visualTxt {
-				.visualH {
-				}
-				.visualP {
-				}
-			}
-			.visualPic {
-				display: block;
-				margin-left: 18%;
-				.visualImg1 {
-					width: 65%;
-					margin-bottom: 20px;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 35%;
-					}
-				}
-				.visualImg2 {
-					width: 65%;
-					margin-bottom: 20px;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 60%;
-					}
-				}
-				.visualImg3 {
-					width: 65%;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 85%;
-					}
-				}
 			}
 		}
 	}
@@ -482,7 +164,7 @@
 				font: bold 3em/1.5 'Raleway';
 			}
 			.fsVidT {
-				bottom: 67%;
+				bottom: 35%;
 				p {
 				}
 				h3 {
@@ -490,53 +172,6 @@
 			}
 
 			video {
-			}
-		}
-		> .inner {
-			display: block;
-			.visualTxt {
-				.visualH {
-				}
-				.visualP {
-				}
-			}
-			.visualPic {
-				margin-left: 0%;
-				.visualImg1 {
-					width: 100%;
-					margin-bottom: 20px;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 35%;
-					}
-				}
-				.visualImg2 {
-					width: 100%;
-					margin-bottom: 20px;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 60%;
-					}
-				}
-				.visualImg3 {
-					width: 100%;
-					img {
-						width: 100%;
-						height: 240px;
-					}
-					h1 {
-						left: 0%;
-						top: 85%;
-					}
-				}
 			}
 		}
 	}

@@ -13,9 +13,11 @@ $mobile: 460px;
 //main
 @import 'main/main';
 @import 'main/visual';
+@import 'main/pics';
 @import 'main/content';
 @import 'main/vid';
 @import 'main/comments';
+@import 'main/btns';
 
 //sub
 @import 'sub/community';

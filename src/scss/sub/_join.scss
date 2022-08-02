@@ -149,3 +149,160 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	.Join {
+		.signUpbg {
+			> img {
+			}
+		}
+		.joinTab {
+			width: 90%;
+			.signUpL {
+				span {
+				}
+				h1 {
+				}
+				p {
+				}
+				.signUpicons {
+					.fa-facebook-f {
+					}
+					.fa-instagram {
+					}
+					.fa-youtube {
+					}
+				}
+			}
+			.signUpR {
+				.signUpRH {
+				}
+				.signUpRP {
+				}
+				table {
+					th {
+						&:last-child {
+						}
+						input[type='reset'],
+						input[type='submit'] {
+						}
+					}
+					td {
+						input[type='text'],
+						input[type='password'],
+						select,
+						textarea {
+						}
+						label {
+						}
+						input[type='radio'],
+						input[type='checkbox'] {
+						}
+						.err {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.Join {
+		height: 700px;
+
+		.signUpbg {
+			height: 700px;
+			width: 100%;
+
+			> img {
+			}
+		}
+		.joinTab {
+			width: 100%;
+			top: 5px;
+			.signUpL {
+				display: none;
+
+				span {
+				}
+				h1 {
+				}
+				p {
+				}
+				.signUpicons {
+					.fa-facebook-f {
+					}
+					.fa-instagram {
+					}
+					.fa-youtube {
+					}
+				}
+			}
+			.signUpR {
+				width: 85%;
+				height: 125%;
+				background: rgba(255, 255, 255, 0.5);
+				padding: 20px 15px;
+
+				.signUpRH {
+					text-align: center;
+					font: bold 20px/1 'Mukta Malar';
+				}
+				.signUpRP {
+					text-align: center;
+					font: 13px/1 'Mukta Malar';
+				}
+				table {
+					width: 100%;
+					margin-left: 30px;
+					font: 15px/1 'Mukta Malar';
+
+					th {
+						width: 28%;
+						padding: 0px 0px;
+						&:last-child {
+							text-align: left;
+						}
+						input[type='reset'],
+						input[type='submit'] {
+							width: 100px;
+							display: inline-flex;
+							justify-content: center;
+							margin: 20px 25px;
+							cursor: pointer;
+							font: 13px/1 'Mukta Malar';
+						}
+					}
+					td {
+						font: 12.5px/1 'Mukta Malar';
+						border: none;
+						padding: 5px 18px;
+						input[type='text'],
+						input[type='password'],
+						select,
+						textarea {
+							padding: 6px 10px;
+							font: 11px/1 'Mukta Malar';
+						}
+						label {
+							margin-right: 5px;
+							font-size: 11px/1;
+						}
+						input[type='radio'],
+						input[type='checkbox'] {
+							padding: 2px;
+							margin-right: 10px;
+							width: 10px;
+							height: 10px;
+						}
+						.err {
+							font: 8px/1 'arial';
+							padding: 2px 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

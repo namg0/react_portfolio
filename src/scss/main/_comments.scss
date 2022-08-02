@@ -1,6 +1,7 @@
 #Comments {
 	#comm {
 		width: 1180px;
+		padding: 30px 0px;
 		margin: 0 auto;
 		position: relative;
 		margin-top: 120px;
@@ -13,7 +14,7 @@
 			display: block;
 			width: 100%;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 70px;
 			font: bold 36px/1 'ABeeZee';
 			color: #444;
 			span {
@@ -23,15 +24,15 @@
 		}
 
 		article {
-			width: 200px;
-			height: 270px;
+			width: 220px;
+			height: 300px;
 			border: 1px solid rgb(228, 154, 154);
 			padding: 20px;
 			background: rgb(255, 255, 255);
 			transition-duration: 0.5s;
 			opacity: 1;
 			margin-right: 20px;
-			margin-bottom: 100px;
+			margin-bottom: 200px;
 			box-shadow: 5px 5px 10px rgb(229, 170, 170);
 			&:last-of-type {
 				margin-right: 0px;
@@ -111,7 +112,7 @@
 				height: 250px;
 				margin-right: 0px;
 				margin-bottom: 20px;
-				padding: 30px;
+				padding: 40px;
 				&:last-of-type {
 				}
 				h2 {
